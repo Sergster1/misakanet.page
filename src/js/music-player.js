@@ -1,6 +1,6 @@
 const {Howl, Howler} = require('howler');
 
-const SATANIA_VOCALS_POS = 52;
+const SATANIA_VOCALS_POS = 20;
 
 const playState = {
 	wasPlaying: false,
@@ -12,7 +12,7 @@ const playState = {
 };
 
 const song = new Howl({
-	src: ['satania-drop.mp3'],
+	src: ['10032charasong.mp3'],
 	onload: () => playState.isLoaded = true
 });
 
@@ -65,7 +65,7 @@ function formatTime(time) {
 }
 
 const OFFSET = 0.35;
-const BPM = 130 / 2;
+const BPM = 135 / 2;
 const BEAT_DURATION = 60 / BPM;
 const NUMBER_OF_FRAMES = 22;
 const ANIMATION_OFFSET = 18;
