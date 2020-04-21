@@ -68,7 +68,7 @@ const OFFSET = 0.35;
 const BPM = 135 / 2;
 const BEAT_DURATION = 60 / BPM;
 const NUMBER_OF_FRAMES = 38;
-const ANIMATION_OFFSET = 18;
+const ANIMATION_OFFSET = 35;
 
 function setBarPos(pos) {
 	const seek = pos * song.duration() || 0;
