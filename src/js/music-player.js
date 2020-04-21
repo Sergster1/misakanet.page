@@ -1,4 +1,4 @@
-const {Howl, Howler} = __webpack_require__(/*! howler */ "./node_modules/howler/dist/howler.js");
+const {Howl, Howler} = require('howler');
 
 const MISAKA10032_VOCALS_POS = 21;
 
