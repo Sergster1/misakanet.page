@@ -209,23 +209,18 @@
 		color: inherit;
 	}
 
-	#satania-dance {
+	#misaka10032-dance {
 		position: absolute;
 		left: calc(50% + 175px);
 		bottom: 0;
 		opacity: 0;
 		transition: 0.5s ease-out opacity;
-		width: 290px;
+		width: 431px;
 		height: 362px;
 		background: url('img/misaka10032_dance_spritesheet.png');
 		background-size: cover;
 		z-index: -1;
 		pointer-events: none;
-
-
-		.has-webp & {
-			background-image: url("./img/webp/misaka10032_dance_spritesheet.webp");
-		}
 
 		@media (max-width: 1024px) {
 			display: none;
