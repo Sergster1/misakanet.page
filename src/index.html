@@ -1,845 +1,618 @@
 <!DOCTYPE html>
-
 <html lang="en-GB">
-
-<head>
-	<!--
-	H-hi, welcome to the source code >////<
-
-%%%%%%%%%%%%#((((((((((%%%%%%%%%%((((#(((((#%%%%##(((((((((,/(###((((((((((((,*(##((((((((((((((((((((((((((((#(#((###%((((((((((##(#%%%%%%%%%%%%%%%%%%%%%                            
-%%%%%%%%%%%%%#((((((#((%%%%%%%%%%%#(###((#(%%%%%%%#((((((((,((####((((((((((#,,(##(((((((((((((((((((((((((((####(#%%%%(((((((((###/#%%%%%%%%%%%%%%%%%%%%%                               
-%%%%%%%%%%%%%%#(((((#(#%%%%%%%%%%%%%#%#((((%%%%%%%%%#(((((/,((#%%%%#((((((((/,.(###((((((((((((((((((((((((((###/(%%%%%(((((((#%%%%*#%%%%%%%%%%%%%%%%%%%%%&                               
-%%%%%%%%%%%%%%%#((((((%%%%%%%%%%%%%%%%%(((#%%%%%%%%%%%%#((*,#(%%%%%%%#((((((*,.((###((((((((((((((((((((((((####*(%%%%%((((#%%%%%%%*#%%%%%%%%%%%%%%%%%%%%%%                                
-%%%%%%%%%%%%%%%%%((#(#%%%%%%%%%%%%%%%%%##(%%%(%%%%%%%%%%%#,,/(%%%%%%%%%%#(((,,.*(#####(((((((((((((((((((((#%%%#*(#%%%%##%%%%%%%%%%*#%%%%%%%%%%%%%%%%%%%%%#                                
-%%%%%%%%%%%%%%%%%%(#(%%%%%%%%%%%%%%%%%%%#(%%%*%%%%%%%%%%%%,,*(%%%%%%%%%%%###,...(##%%%%##(((((((((((((((((%%%%%#,(#%%%%((%%%%%%%%%(*#%%%%%%%%%%%%%%%%%%%%%%                             
-%%%%%%%%%%%%%%%%%%%%(%%%%%%%%%%%%%%%%%%%%(%%%*%%%%%%%%%%%%,..(%%%%%%%%%%%%##,...((#%%%%%%%%#(((((((((((#%%%%%%%#,((%%%#*(%%%%%%%%%**#%%%%%%%%%%%%%%%%%%%%%#                                
-%%%%%%%%%%%%%%%%%%%#(%%%%%%%%%%%%%%%%%%%%(%%#*%%%%%%%%%%%%,..(%%%%%%%%%%%%##....((#%%%%%%%%%%%%%%%%%%%%%%%%%%%#*,((#%#/*(%%%%%%%%%**%%%%%%%%%%%%%%%%%%%%%%#%                               
-%%%%%%%%%%%%%%%%%%%##%%%%%%%%%%%%%%%%%%%%(%%#,%%%%%%%%%%%#,..(#%%%%%%%%%%%##....,(##%%%%%%%%%%%%%%%%%%%%%%%%%%(..((###.,(%%%%%%%%#,/%%%%%%%%%%%%%%%%%%%%%%#%                             
-%%%%%%%%%%%%%%%%%%%##%%%%%%%%%%%%%%%%%%%*(###,%%%%%%%%%%##...,##%%%%%%%%%%##.....((#%%%%%%%%%%%%%%%%%%%%%%%%%#(.,(####.*(%%%%%%%%.,%%%%%%%%%%%%%%%%%%%%%%%#%                              
-%%%%%%%%%%%%%%%%%%%#%%%%%%%%%%%%%%%%%%%/*(##(.#%%%%%%%%%##....(#%%%%%%%%%%##...../(##%%%%%%%%%%%%%%%%%%%%%%%%#..*(###..,(%%%%%%%(.*%%%%%%%%%%%%%%%%%%%%%%%#                              
-%%%%%%%%%%%%%%%%%%%#%%%%%%%%%%%%%%%%%%%,,(###.*%%%%%%%%%##....##%%%%%%%%%%##. . ..(##%%%%%%%%%%%%%%%%%%%%%%%#(..((###..*#%%%%%%%..#%%%%%%%%%%%%%#%%%%%%%%%#                             
-%%%%%%%%%%%%%%%%%%%#%%%%%%%%%%%%%%%%%%(,,(###..%%%%%%%%%%#.....(#%%%%%%%%%## .    /(##%%%%%%%%%%%%%%%%%%%%%#(.. ((##/  (##%%%%%,..%%%%%%%%%%%%%%@%%%%%%%%%#
-%%%%%%%%%%%%%%%%%%%#%%%%%%%%%%%%%%%%%#*,.,(##  ,#%%%%%%%##  .. (##%%%%%%%###       ((##%%%%%%%%%%%%%%%%%%%##   ./###   (##%%%#/..%%%%%%%%%%%%%%%@%%%%%%%%%#
-%%%%%%%%%%%%%%%%%%%#%%%%%%%%%%%%%%%%%#,,  (##.  ###%%%%###*     (###%%######.      ,/####%%%%%%%%%%%%%#####.   (/##.  .#######..#%%%%%%%%%%%%%%@@@%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%#%%%%%%%%%%%%%%%%#(,   .##*  .##########     /########(((/       */(################(((.   ./((/   /######../#%%%%%%%%%%%%%%@@@%%%%@%%%#
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#,,    /((   /######((((     ((#(((/*,...         ,//(((((((((((((/,      //((    (((###  /##%%%%%%%%%%%%%@@@@%%%%@%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#,.     .     ,//////*,.          ,.                                     ..      **//((  *####%%%%%%%%%%%%@@@@%%%@@%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#,         .                            ..**,..,  .            ,    .*.                 *//((###%%%%%%%%%@@@@@%%%@@%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%(.         ####,                                                                   ,(.     ...##%%%%%%%%@@@@@&%%@@@%%
-%&&%%%%%%%%%%%%%%%%%#%%%%%%%%%%%%%%#*         (########/                                                          .######(#     .##%%%%%%%%%@@@@@%%@@@@%
-%%&&%%%%%%%%%%%%%%%%#%%%%%%%%%%%%%##*           ,####%%%%%%#.                                                 *#%%%######(,     ,#%%%%%%%%%@@@@@@%@@@@%%
-#%&&%&%%%%%%%%%%%#.,#%%%%%%%%%%%%%%#,                .(%%%%%%%%#,      .                              *.  ,%%%%%%%##/          .##%%%%%%%%%@@@@@%%
-#%%%&&&%%%%%%%%#....#%%%%%%%%%%%%%##,                     .(%%%%%%%#,    ..           .           .,   #%%%%%%%(.              (#%%%%%%%%%%@@@@@%
-#%%%%&&&%%%%%%.....*##%%#%%%%%%%%%##.                           /%%%%%%#.              ..          .#%%%%%%*                  ,##%%%%%%%%%%
-#%%%%&&&%%%%#....,,/######%%%%%%%%##                                 *%%%###,                    (#%%%%*                      ##%%%%%%%%%%#
-##%%%&%%%%%%(...*,,(######%%%%%%%%#%                                   ..*(.                     ,#*                         (##%%%%%%%%%%#
-##%%%%&%%%%%,...,,,#(######%%%%%%%#%                     ./#%%%%%%%%%%%%%#/.                      .%%%#(,.                   ##%%%%%%%%%%@##
-##%%%%%%%%%%,...,,,(########%%%%%%##            .(##%%%%%%%%%%%%%%%%#*.                          *(##%%%%%%%%%%%#/.         *##%%%%%%%%%%@@%
-##%%%%%%%%%%/...,,,(*/######%%%%%%##.        /###%%%%%%%%%%#/,                                           *#%%%%%%%%%%%####( (#%%%%%%%%%%@@@#
-##%%%%%%%%%%%...,,,(,*(#######%%%%##,       (########(,                                                         *#####%%##  ##%%%%%%%%%%@@@@%
-##%%%%%%%%%%%#..,,/*,,(#######%%%%##/       .(/#*. .                                      ,                           ,###, %#%%%%%#%%%%@@@@@@
-##%%%%%%%%%%%%/..,(,,,#########%%%###            .                                                                          ##%%%%##%%%@@@@@@@@
-##%%%%%%%%%%%%%#..(,,,##########%%###              .  . .        .                                                          ##%%%%##%%%@@@@@@@#
-##%%%%%%%%%%%%%%%/..,,(##############                .     .                                                                ###%%##%%%%@@@@@@@@@
-##%%%%%%%%%%%%%%%%%.../##############,                                                                        .   .         #######%%%&@@@@@@@@@#
-##%%%%%%%%%%%%%%%%%%%.(##############(                                                                      .        .      #######%%%%@@@@@@@@@@@
-##%%%%%%%%%%%%%%%%%%%%%###############                                                                                     .#######%%%@@@@@@@@@@@@@
-##%%%%%%%%%%%%%&&&&&&%%###############.                                                                                    *########%%@@@@@@@@@@@@@@
-###%%%%%%%%%%%%&&&&&&%%###############(                                                                                    #########%%@@@@@@@@@@@@@@%
-###%%%%%%%%%%%&&&&&&&%%################        .                                                                           #########%%@@@@@@@@@@@@@@@
-##%%%%%%%%%%%%&&&&&&%%%################        .                                                                          (##########%@@@@@@@@@@@@@@@#
-##%%%%%%%%%%%%%%%%%%%%#################(                                                                                 ############%#@@@@@@@@@@@@@##
-(##########%%%%%%%%%%%##################%%.                                                                            .##############%@@@@@@@@@@@@@##
-(/.       ./#%%%%%%%%###################%%%##.                                                                       .@@##############%@@@@@@@@@@@@##/
-            *   ..*,/####################%%**,,,*                                                                  (@@@################&@@@@@@@@@@#(#
-      ,.    ,     .,######################**/,,,...*                   .                       *.               ,@@%/,.#################@@@@@@@@@#(#
-          . ,      ,######################(*,,,,,.....,.                                                     *        #((################@@@@@@%((
-           ./      #######################(#,,,,,,........*.                                             .. .        (((##################&@((
-            (     .########################((,,,,,............*,                                     .,    ....     (((#####################
-            (   .*#########################(((,,,,,................*.                          .*,.      ......    (((######################
-            (* ../##########################(((,,,,....................,*,                **,,,,,,.     ......*   ((((######################%
-             (...############################(((,,,,.........................**.     .*,,,,,,,,,,,.............  *(((########################
-             .#.,###%#########################(((,,,,.......................*........*,,,,,,,,,,,,...........*  ,(((#########################
-              .*###%%%########################*(((,,,......................*..........,,,,,,,,,,,,...........   (((##########################
-              ,.###%%%#######################(,,(((,,.....................*...........*,,,,,,,,,,............  ((((##########%%%%###########
-                ####%%#######################(*,,*((*,...................,............*,,,,,,,,,..............,(((#######%%%%%%%##########/ 
-     ..         ,##%#%#######%###############(/,,,,((*................................*,,,,,,,,,..............((((###%%%%%%%%%###%%%####*  
-     ...         #####%######%%%############((*,,,,,/(,*,...............*..........,*,*,,,,,,,,...............(((##%%%%%%%%%%%%%%%%%##,    
-     ,,,,,        ###########%%%%%%##########(,,,,,,./(....,,...........*....,,.......*,,,,,,,.... ............((##%%%%%%%%%%%%%%%%**,.    
-     ,,,,,,        ###########%%%%%%%%#######(..,,,,../,......*............*..........*,,,,,,....   ............####%%%%%%%%%%%%%****,      
-     ,,,,,,,.       ,##########%%%%%%%%%%####(*  ,,,,,**........,.....................,,,,,......      ...........*###%%%%%%%%%%%%%##(      
-     ,,,,,,,,,       .#####%####%%%%%%%%%%%%##(.  .,,,#/.............................,,,,,...           .........../  *###%%%%%%%%%###,     
-     ,,,,,,,,,,     *...,###%%%%##%%%%%%%%%%%%##/   .##,.............................*,,..  ..           ..........      .##%%%%%%%##(       
-
-	-->
-
-	<meta charset="UTF-8" />
-
-	<meta name="keywords" content="Raildex, Misaka, Misaka Mikoto, Misaka Imouto, Misaka 10032, Toaru, Toaru Majutsu no Index, moe, waifu, Mikoto, Railgun, Sisters, cute, anime, manga, Index, Touma, Kamijou, Kamijou Touma" />
-	<meta name="description" content="Discover why Misaka 10032 is the best character, clone, and waifu from raildex, and, maybe, from every anime and manga out there!" />
-	<meta name="author" content="Pizzacus" />
-	<meta name="theme-color" content="#EE6666" />
-
-	<link rel="icon" sizes="192x192" href="https://hifum.in/img/favicon.png" />
-	<link rel="apple-touch-icon" href="https://hifum.in/img/favicon.png" />
-	<meta name="msapplication-square310x310logo" content="https://hifum.in/img/favicon.png" />
-
-	<meta property="og:title" content="Satania: The best Waifu. Ever." />
-	<meta property="og:url" content="https://misakanet.page" />
-	<meta property="og:type" content="website" />
-	<meta property="og:description" content="Misaka 10032 IS the BEST waifu, no really, she is, if you don't believe me, this website will convince you." />
-
-	<meta property="og:image" content="https://hifum.in/img/favicon.png" />
-	<meta property="og:image:width" content="425" />
-	<meta property="og:image:height" content="425" />
-
-	<link rel="alternate" href="https://hifum.in/#de" hreflang="de" />
-	<link rel="alternate" href="https://hifum.in/" hreflang="en" />
-	<link rel="alternate" href="https://hifum.in/#es" hreflang="es" />
-	<link rel="alternate" href="https://hifum.in/#et" hreflang="et" />
-	<link rel="alternate" href="https://hifum.in/#fr" hreflang="fr" />
-	<link rel="alternate" href="https://hifum.in/#it" hreflang="it" />
-	<link rel="alternate" href="https://hifum.in/#lv" hreflang="lv" />
-	<link rel="alternate" href="https://hifum.in/#hu" hreflang="hu" />
-	<link rel="alternate" href="https://hifum.in/#id" hreflang="id" />
-	<link rel="alternate" href="https://hifum.in/#nl" hreflang="nl" />
-	<link rel="alternate" href="https://hifum.in/#nb" hreflang="nb" />
-	<link rel="alternate" href="https://hifum.in/#pt" hreflang="pt" />
-	<link rel="alternate" href="https://hifum.in/#pl" hreflang="pl" />
-	<link rel="alternate" href="https://hifum.in/#fi" hreflang="fi" />
-	<link rel="alternate" href="https://hifum.in/#sv" hreflang="sv" />
-	<link rel="alternate" href="https://hifum.in/#tr" hreflang="tr" />
-	<link rel="alternate" href="https://hifum.in/#ru" hreflang="ru" />
-	<link rel="alternate" href="https://hifum.in/#el" hreflang="el" />
-	<link rel="alternate" href="https://hifum.in/#ja" hreflang="ja" />
-	<link rel="alternate" href="https://hifum.in/#ko" hreflang="ko" />
-	<link rel="alternate" href="https://hifum.in/#zh-Hans" hreflang="zh-Hans" />
-
-	<title>Misaka 10032: The best Waifu. Ever.</title>
-
-	<link href="https://use.typekit.net/tro1mso.css" rel="stylesheet" crossorigin="anonymous" />
-	<link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
-
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" crossorigin="anonymous" />
-	<link href="style.css" rel="stylesheet" />
-
-	<link rel="preload" href="img/back.jpg" as="image" />
-</head>
-
-<body>
-	<!-- Webp support detection for CSS -->
-	<img
-		style="position: absolute;top: -1000px;"
-		src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA"
-		onload="document.body.classList.add('has-webp')" />
-	<div i18n-group="main-intro" class="intro">
-		<div class="main">
-			<div class="back-overlay"></div>
-
-			<div class="title">
-				<h1 i18n="name" id="logo">Misaka 10032</h1>
-				<p lang="ja">ミサカ10032号</p>
-				<h2 i18n="best-waifu-ever">The best Waifu. <b>Ever.</b></h2>
-	
-				<div class="button-container">
-					<span>
-						<a i18n="join-discord" class="button discord" href="https://discord.gg/xhxrb4A"><i class="fab fa-discord"></i>Join the Discord</a><br />
-						<span id="discord-count" i18n="discord-count">
-							<span id="discord-number"></span> members
-						</span>
-					</span>
-					
-					<span>
-						<a i18n="join-reddit" class="button reddit" href="https://www.reddit.com/r/OneTrueBiribiri/"><i class="fab fa-reddit-alien"></i>Join the Subreddit</a><br />
-						<span id="reddit-count" i18n="reddit-count">
-							<span id="reddit-number"></span> subscribers
-						</span>
-					</span>
-	
-					<br />
-					
-					<span i18n="language-warning" class="small translate-only">(These communities use English as their primary language)</span>
-				</div>
-	
-				<span i18n="scroll-notice" class="scroll-notice"><i class="fas fa-arrow-down"></i>Scroll to learn more!</span>
-	
-				<p style="display: none; /* Now the mobile version is good enough */" i18n="mobile-disclaimer" class="mobile disclaimer">
-					I am really sorry, but the mobile version of this website was kinda rushed and <b>it's really shit</b>, I didn't think anyone would visit it on a phone tbh.
-				</p>
-			</div>
-	
-			<div id="translator-mode">
-				<button id="download">Download</button>
-				<button id="upload">Browse…</button>
-				<select id="format">
-					<option id="yaml" value="yaml">YAML</option>
-					<option value="json">JSON</option>
-				</select>
-			</div>
-	
-			<div class="footer">
-				<div class="language-select">
-					<div id="language-protip" i18n-skip>
-						<span id="language-protip-text" i18n="language-protip">
-							<!-- Note for translators, change "English" to the name of your language of course -->
-							Would you like to view this website in <b>English</b>?<br />
-							Use this drop-down to select a language!
-						</span>
-						
-						<i id="close-language-protip" class="fas fa-times"></i>
-					</div>
-					<div class="select-wrapper">
-						<div i18n="language-select" class="select-button">
-							Language
-							<i class="fas fa-angle-down"></i>
-						</div>
-						<select id="locale-select" lang="mul">
-							<option disabled title="German" value="de" lang="de">Deutsch</option>
-							<option title="English" value="en-GB" lang="en-GB">English</option>
-							<option disabled title="French" value="fr" lang="fr">Français</option>
-							<option disabled title="Russian" value="ru" lang="ru">Русский</option>
-							<option disabled title="Japanese" value="ja" lang="ja">日本語</option>
-						</select>
-					</div>
-				</div>
-				
-				<div class="credits" i18n="credits">
-					A glorious shitpost by some pizza named <b title="Kenyérlángos">Pizzacus&trade;</b> and adapted by <b title="Kenyérlángos">Sergster1&trade;</b>
-				</div>
-			</div>
-	
-			<canvas class="snow full canvas-background"></canvas>
-		</div>
-		
-		<div class="music-player-container" id="music-player-container" i18n-group="music-player">
-			<div class="music-player display-intro" id="music-player">
-				<div class="play-controller">
-					<i class="fas fa-play"></i>
-				</div>
-				<div class="intro-text" i18n-group="intro">
-					<b i18n="bold-text">Wanna listen to a cute song while browsing this page?</b>
-					<span class="small" i18n="small-text">Press the play button on the left!</span>
-				</div>
-
-				<div class="loading">
-					<i class="fas fa-spinner fa-pulse"></i>
-				</div>
-
-				<div class="music-details">
-					<div class="name" i18n-group="metadata">
-						<span class="title" i18n="title">「ひそやかな欲望 ~ミサカは、発生させます~」</span>
-						<span class="author" i18n="author">ささき のぞみ</span>
-					</div>
-
-					<div class="countdown small hidden" i18n="countdown">Misaka sings in <span id="time-until-satania"></span> seconds.</div>
-					
-					<div class="time-controller">
-						<div class="time-bar">
-							<div class="elapsed">
-								<div class="slider-tip"></div>
-							</div>
-						</div>
-
-						<div class="volume">
-							<i class="fas fa-volume-down"></i>
-
-							<div class="volume-box">
-								<div class="volume-bar">
-									<div class="volume-fill">
-										<div class="volume-tip"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-	
-						<div class="time-progression"></div>
-					</div>
-
-				</div>
-
-			</div>
-	
-			<p i18n="footer">
-				You can also listen on <a href="https://www.youtube.com/watch?v=_qE9oYCEt6E">YouTube</a> and <a href="https://soundcloud.com/drama-cd1/hisoyakana-yokubou-misaka-wa">SoundCloud</a>.
-			</p>
-
-			<div id="satania-dance"></div>
-
-			<canvas id="sound-visualizer"></canvas>
-		</div>
-
-		<div class="dev-announcement-container" i18n-group="dev-announcement" style="display: none">
-			<div class="dev-announcement">
-				<h1 i18n="line-1">We're looking for help!</h1>
-
-				<h2 i18n="line-2">For over two years, New&nbsp;Game8 has been an amazing online community that connected thousands of people.</h2>
-	
-				<p i18n="line-3">
-					Now, we want to take it to the next level and expand to new horizons!<br />
-					And for that, <b>we're looking for web developers to help us.</b>
-				</p>
-					
-				<p i18n="line-4">
-					If you have decent skills in <b>web programming</b> and you want to learn more,<br />
-					check out our blog post about it!
-				</p>
-
-				<p>
-					<span i18n="line-5">Hopefully, we'll see you soon.</span>
-
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" width="30">
-						<g transform="matrix(1.25 0 0 -1.25 0 45)">
-							<path fill="#dd2e44" d="M2.067 24.68c0 8.8 12.184 12.06 15.933 1.875 3.749 10.186 15.933 6.925 15.933-1.874C33.933 15.12 18 3 18 3S2.067 15.12 2.067 24.68"/>
-						</g>
-					</svg>
-				</p>
-					
-				<a href="https://blog.misakanet.page/posts/join-the-satania-dropout-technical-team/" i18n="line-6">Learn More →</a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="scroll">
-		<div i18n-group="become-a-satania-follower" class="section">
-			<div class="left image">
-				<picture>
-					<source srcset="img/webp/satania_thumbsup.webp" type="image/webp">
-					<img src="img/satania_thumbsup.png" alt="" />
-				</picture>
-			</div>
-
-			<div class="right">
-				<h2 i18n="large-text">Become a clonefag today!</h2>
-				<p i18n="sub-text"><b>There are no steps to becoming a clonefag</b>, all&nbsp;you have to do is to accept that Misaka Imouto are the&nbsp;best&nbsp;characters <i>but 10032 is the bestest</i></p>
-				<span i18n="small-text" class="small">Well, If you could make Misaka Imouto memes and shitposts, that would help us a lot…</span>
-			</div>
-		</div>
-
-		<div i18n-group="she-is-beautiful" class="section">
-			<div class="left">
-				<h2 i18n="large-text">A lovely smile.<br /> Two magnificent eyes.<br /> A stunning appearance.<br /> And a really cool set of goggles</h2>
-				<p i18n="sub-text">She's a really <b>pulchritudinous</b> person</p>
-				<span i18n="small-text" class="small">We clonefags are very cultured people, so we only use a very cultured language</span>
-			</div>
-
-			<div class="right image">
-				<picture>
-					<source srcset="img/webp/satania_cute.webp" type="image/webp">
-					<img src="img/satania_cute.png" alt="" />
-				</picture>
-			</div>
-		</div>
-
-		<div i18n-group="end-the-waifu-war" class="section">
-			<div class="left image">
-				<picture>
-					<source srcset="img/webp/satania_happy.webp" type="image/webp">
-					<img src="img/satania_happy.png" alt="" />
-				</picture>
-			</div>
-
-			<div class="right">
-				<h2 i18n="large-text">The best Misaka clone just&nbsp;for&nbsp;you.</h2>
-				<p i18n="sub-text">Let's end the waifu war with the <b>most kawaii clone in the world</b>!</p>
-			</div>
-		</div>
-
-		<div class="section">
-			<div i18n-group="she-is-perfect" class="center">
-				<h2 i18n="large-text">In short, she's just perfect.</h2>
-				<p i18n="sub-text">Even Google knows.</p>
-
-				<div id="searchbar" class="google-searchbar">
-					<span i18n="searchbar-name">satania</span>
-
-					<div class="buttons">
-						<picture>
-							<source srcset="img/webp/google_mic.webp" type="image/webp">
-							<img id="search-by-voice" src="img/google_mic.png" height="24px" />
-						</picture>
-						<img id="search-button" src="img/google_search.svg" height="24px" />
-					</div>
-				</div><br />
-
-				<div i18n-group="google-definition" class="google-definition">
-					<h1 i18n="name" id="definition-name">perfection</h1>
-					<h3><span i18n="prononciation">/pəˈfɛkʃ(ə)n/</span> <i id="listen" class="fas fa-volume-up"></i></h3>
-
-					<div i18n="noun" class="noun">
-						noun
-					</div>
-
-					<div i18n-group="definition-1" class="definition no-bullet">
-						<span i18n="definition">the state or quality of being perfect.</span>
-						<div class="example">
-							<span i18n="example">"the satiny perfection of <b>Misaka 10032</b>'s skin"</span>
-							<div class="synonyms">
-								<span><i i18n="synonyms">synonyms:</i></span>
-								<span i18n="synonyms-list">Misaka 10032, flawlessness, excellence, superbness, sublimity, exquisiteness, magnificence, perfectness, faultlessness, impeccability, immaculateness, exemplariness<br />
-								"the satiny perfection of her skin"</span>
-							</div>
-						</div>
-					</div>
-
-					<div i18n-group="definition-2" class="definition">
-						<span i18n="definition">a person or thing considered to be perfect.</span>
-						<div class="example">
-							<span i18n="example">"I am told that <b>10032</b> is perfection itself"</span>
-							<div class="synonyms">
-								<span><i i18n="synonyms">synonyms:</i></span>
-								<span i18n="synonyms-list">Misaka 10032, the ideal, a cutie, the net plus ultra, the beau idéal, a nonpareil, the crème de la crème, the last word, the ultimate, a dream; <i>informal</i> one in a million, the tops, the best/greatest thing since sliced melon bread, the bee's knees; <i>archaic</i> a nonesuch<br />
-								"for her, he was still perfection"</span>
-							</div>
-						</div>
-					</div>
-
-					<div i18n-group="definition-3" class="definition">
-						<span i18n="definition">the action or process of improving something until it is faultless.</span>
-						<div class="example">
-							<span i18n="example">"I worked all day on the perfection of my <b>Misaka 10032</b> drawing"</span>
-							<div class="synonyms">
-								<span><i i18n="synonyms">synonyms:</i></span>
-								<span i18n="synonyms-list">Misaka 10032, improvement, betterment, refinement, refining, perfecting, polishing, amelioration; <i>rare</i> melioration<br />
-								"the perfection of new mechanisms of economic management"</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div i18n-group="no-one-can-compete" class="section">
-			<div class="center">
-				<h2 i18n="large-text">No one can compete.</h2>
-				<p i18n="sub-text">Just think about it, why would Mikoto, Misaki or Saten be the best?</p>
-
-				<table i18n-group="table">
-					<thead>
-						<tr i18n-group="names">
-							<th class="category"></th>
-							<th i18n="misaka10032" class="highlight">Misaka 10032</th>
-							<th i18n="misaka">Mikoto</th>
-							<th i18n="misaki">Misaki</th>
-							<th i18n="saten">Saten</th>
-						</tr>
-					</thead>
-
-					<tbody>
-						<tr i18n-group="goals-in-life">
-							<td i18n="category" class="category">Has goals in life</td>
-							<td class="highlight">
-								<i class="fas fa-check"></i>
-								<span i18n="misaka10032" class="small">(winning the Toumab owl)</span>
-							</td>
-							<td>
-								<i class="fas fa-check"></i>
-								<span i18n="misaka" class="small">(being on the same stage as Touma <i>whatever that means</i>)</span>
-							</td>
-							<td></td>
-							<td></td>
-						</tr>
-
-						<tr i18n-group="hard-challenges">
-							<td i18n="category" class="category">Has surmounted hard challenges</td>
-							<td class="highlight">
-								<i class="fas fa-check"></i>
-								<span i18n="misaka10032" class="small">(Doing emergency first aid without anesthesia on Christmas Eve)</span>
-							</td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-
-						<tr i18n-group="tries-her-best">
-							<td i18n="category" class="category">Always has cute clothes</td>
-							<td class="highlight">
-								<i class="fas fa-check"></i>
-							</td>
-							<td>
-								<i class="fas fa-check"></i>
-								<span i18n="misaka" class="small">Yeah, okay she wins this one too</span></td>
-							<td></td>
-							<td></td>
-						</tr>
-
-						<tr i18n-group="powerfull-allies">
-							<td i18n="category" class="category">Has powerful allies</td>
-							<td class="highlight">
-								<i class="fas fa-check"></i>
-								<span i18n="misaka10032" class="small">(Touma, Last Order, Accelerator, Misaka... The list goes on...)</span>
-							</td>
-							<td></td>
-							<td>
-								<i class="fas fa-check"></i>
-								<span i18n="misaki" class="small">(Shocking Pink and Emerald)</span>
-							</td>
-							<td></td>
-						</tr>
-
-						<tr i18n-group="tragic-backstory">
-							<td i18n="category" class="category">Has a deep, tragic backstory</td>
-							<td class="highlight">
-								<i class="fas fa-check"></i>
-								<span i18n="misaka10032" class="small">(Has the memories of 10031 clones who died before her)</span>
-							</td>
-							<td>
-								<i class="fas fa-check"></i>
-								<span i18n="misaki" class="small">( ABOO HOO MY BOYFRIEND DOENST REMEMBER ME :(( )</span>
-							</td>
-							<td></td>
-							<td></td>
-						</tr>
-
-						<tr>
-							<td i18n="member-favorites" class="category">Number of member favourites on MAL*</td>
-							<td class="highlight" i18n-reformat="14133">14133</td>
-							<td i18n-reformat="13522">13522</td>
-							<td i18n-reformat="500">500</td>
-							<td i18n-reformat="1048">1048</td>
-						</tr>
-
-						<tr>
-							<td i18n="subreddit-subs" class="category">Number of subs on their subreddit*</td>
-							<td class="highlight">
-								<span i18n-reformat="8164">8,164</span>
-								<a href="https://www.reddit.com/r/OneTrueBiribiri/" class="small">/r/OneTrueBiriBiri</a>
-							</td>
-							<td>
-								<span i18n-reformat="8164">8,164</span>
-								<a href="https://www.reddit.com/r/OneTrueBiribiri/" class="small">/r/OneTrueBiriBiri</a>
-							</td>
-							<td>
-								<span i18n-reformat="147">147</span>
-								<a href="https://www.reddit.com/r/OneTrueMentalOut/" class="small">/r/OneTrueMentalOut</a>
-							</td>
-							<td>
-								<span i18n-reformat="594">594</span>
-								<a href="https://www.reddit.com/r/OneTrueSaten/" class="small">/r/OneTrueSaten</a></td>
-						</tr>
-
-						<tr i18n-group="e-hentai">
-							<td i18n="category" class="category">Number of Doujinshi on e-hentai*</td>
-							<td class="highlight">
-								<span i18n-reformat="963">963</span>
-								<span i18n="misaka10032" title="Misaka to Misaka to Misaka wa Misaka" class="small">(One of which is hilarious)</span>
-							</td>
-							<td i18n-reformat="850">850</td>
-							<td i18n-reformat="288">288</td>
-							<td i18n-reformat="198">198</td>
-						</tr>
-
-						<tr>
-							<td i18n="rule34" class="category">Number of pics on rule34.xxx*</td>
-							<td class="highlight" i18n-reformat="608">608</td>
-							<td i18n-reformat="358">358</td>
-							<td i18n-reformat="167">167</td>
-							<td i18n-reformat="127">127</td>
-						</tr>
-
-						<tr>
-							<td i18n="gelbooru" class="category">Number of pics on gelbooru*</td>
-							<td class="highlight" i18n-reformat="1064+8685">9722</td>
-							<td i18n-reformat="9722">9722</td>
-							<td i18n-reformat="1376">1376</td>
-							<td i18n-reformat="2332">2332</td>
-						</tr>
-						<tr i18n-group="Annoying">
-							<td i18n="category" class="category">Has annoying followers</td>
-							<td>
-							</td>
-							<td>
-								<i class="fas fa-check"></i>
-							</td>
-							<td>
-								<i class="fas fa-check"></i>
-							</td>
-							<td>
-								<i class="fas fa-check"></i>
-								<span i18n="saten" class="small">fuck you mobile poster</span>
-							</td>
-
-					</tbody>
-				</table>
-
-				<span i18n="as-of">*As of <span id="last-updated"></span></span>
-			</div>
-		</div>
-
-		<div class="section">
-			<div class="center" i18n-group="the-others-are-trash">
-				<h2 i18n="large-text">The other characters are trash, no exception.</h2>
-				<p i18n="sub-text">They may be cute, but when you know the facts, they really aren't.</p>
-
-				<div i18n-group="the-others-are-trash" class="compare">
-					<div i18n-group="Misaka" class="character Misaka">
-						<picture>
-							<source srcset="img/webp/portraits/gabriel.webp" type="image/webp">
-							<img src="img/portraits/gabriel.jpg" />
-						</picture>
-						<div class="name">
-							<span i18n="name">Misaka</span>
-							<div i18n="name-detail" class="small">
-								Mikoto<br /> <span lang="ja">御坂 美琴</span>
-							</div>
-						</div>
-						<ul i18n-group="description">
-							<li i18n="argument-1"><b>Lazy NEET who is 100% unlikeable</b></li>
-							<li i18n="argument-2">No seriously, she has no redeeming qualities</li>
-							<li i18n="argument-3">People only like her because she may be relatable for them</li>
-							<li i18n="argument-4"><b>We don't even know why she's the main</b></li>
-							<li i18n="argument-5"><b>She's used for a ton of shitty fanservice</b>, like panty-shots and other questionable camera angles</li>
-							<li i18n="argument-6"><b>She's basically Umaru</b></li>
-						</ul>
-					</div>
-
-					<div i18n-group="Misaki" class="character Misaki">
-						<picture>
-							<source srcset="img/webp/portraits/yun.webp" type="image/webp">
-							<img src="img/portraits/yun.jpg" />
-						</picture>
-						<div class="name">
-							<span i18n="name">Misaki</span>
-							<div i18n="name-detail" class="small">
-								Shoukuhou<br /> <span lang="ja">食蜂 操祈</span>
-							</div>
-						</div>
-						<ul i18n-group="description">
-							<li i18n="argument-1"><b>She's useless</b></li>
-							<li i18n="argument-2">She only makes good food</li>
-							<li i18n="argument-3">Really nothing else</li>
-							<li i18n="argument-4"><b>People only like her because she's cute</b></li>
-							<li i18n="argument-5">Her fans are perverts AND horrible people</li>
-							<li i18n="argument-6">She's always in dresses</li>
-						</ul>
-					</div>
-
-					<div i18n-group="hajime" class="character hajime">
-						<picture>
-							<source srcset="img/webp/portraits/hajime.webp" type="image/webp">
-							<img src="img/portraits/hajime.jpg" />
-						</picture>
-						<div class="name">
-							<span i18n="name">Saten</span>
-							<div i18n="name-detail" class="small">
-								Ruiko<br /> <span lang="ja">佐天 涙子</span>
-							</div>
-						</div>
-						<ul i18n-group="description">
-							<li i18n="argument-1"><b>BOOOOOOORING</b></li>
-							<li i18n="argument-2">No really, she never does anything interesting except has a bat</li>
-							<li i18n="argument-3">Like, she's all normal and stuff</li>
-							<li i18n="argument-4"><b>Her followers shit up the threads</b></li>
-							<li i18n="argument-5"><b>She gets a ton of filler dedicated to her because Nagai is a hack</b></li>
-							<li i18n="argument-6">FUCK OFF NAGAI</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div i18n-group="fanarts" class="section">
-			<div class="left image slideshow">
-				<picture x-source="https://www.deviantart.com/kall-xshiant/art/Sketch-54-Takimoto-Hifumi-New-Game-753487992" class="shown">
-					<source srcset="img/webp/fanarts/fanart1.webp" type="image/webp">
-					<img height="500px" src="img/fanarts/fanart1.jpg" alt="" />
-				</picture>
-				<picture x-source="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=62828639">
-					<source srcset="img/webp/fanarts/fanart2.webp" type="image/webp">
-					<img height="500px" src="img/fanarts/fanart2.jpg" alt="" />
-				</picture>
-				<picture x-source="https://eriyy.deviantart.com/art/Satania-Sama-660744221">
-					<source srcset="img/webp/fanarts/fanart3.webp" type="image/webp">
-					<img height="500px" src="img/fanarts/fanart3.png" alt="" />
-				</picture>
-				<picture x-source="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=61218653">
-					<source srcset="img/webp/fanarts/fanart4.webp" type="image/webp">
-					<img height="500px" src="img/fanarts/fanart4.png" alt="" />
-				</picture>
-				<picture x-source="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=61476097">
-					<source srcset="img/webp/fanarts/fanart5.webp" type="image/webp">
-					<img height="500px" src="img/fanarts/fanart5.jpg" alt="" />
-				</picture>
-				<picture x-source="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=61519696">
-					<source srcset="img/webp/fanarts/fanart6.webp" type="image/webp">
-					<img height="500px" src="img/fanarts/fanart6.jpg" alt="" />
-				</picture>
-				<picture x-source="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=62059829">
-					<source srcset="img/webp/fanarts/fanart7.webp" type="image/webp">
-					<img height="500px" src="img/fanarts/fanart7.jpg" alt="" />
-				</picture>
-				<picture x-source="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=61362109">
-					<source srcset="img/webp/fanarts/fanart8.webp" type="image/webp">
-					<img height="500px" src="img/fanarts/fanart8.png" alt="" />
-				</picture>
-				<picture x-source="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=62195163">
-					<source srcset="img/webp/fanarts/fanart9.webp" type="image/webp">
-					<img height="500px" src="img/fanarts/fanart9.jpg" alt="" />
-				</picture>
-				<a i18n="source" class="source">Source</a>
-			</div>
-
-			<div class="right">
-				<h2 i18n="large-text">Fanarts that are impossibly&nbsp;kawaii!</h2>
-				<p i18n="sub-text">Just look at this, this is adorable. <noscript>Slideshow requires JavaScript.</noscript></p>
-			</div>
-		</div>
-
-		<div i18n-group="autism" class="section">
-			<canvas class="snow full canvas-background"></canvas>
-
-			<div class="left">
-				<h2 i18n="large-text">Also, she's not an autist, stop&nbsp;saying&nbsp;that</h2>
-				<p i18n="sub-text">Autistic people often have trouble communicating, staying quiet in their own corner all the time, Misaka 10032&nbsp;isn't like that at all.<br /><b>She's probably less autistic than you are!</b></p>
-				<span i18n="small-text" class="small">And while she was about to shoot a kid,<br /> it's because Last Order was asking for it!</span>
-			</div>
-
-			<div class="right image">
-				<picture>
-					<source srcset="img/webp/satania_reindeer.webp" type="image/webp">
-					<img src="img/satania_reindeer.png" alt="" />
-				</picture>
-				<div class="nose-button" onclick="startSnow()"></div>
-			</div>
-		</div>
-
-		<div i18n-group="pope-francis" class="section background pope-francis">
-			<div class="back-overlay"></div>
-			<div class="center">
-				<h2 i18n="large-text">Even Pope Francis loves Misaka 10032.</h2>
-				<p i18n="sub-text">"Misaka 10032 is my number two waifu, the number one being Kamijou Touma of&nbsp;course!<br /> I bless her and all her followers!"</p>
-			</div>
-		</div>
-
-		<div i18n-group="flipping-cards" class="section">
-			<div class="center">
-				<h2 i18n="large-text">She replaces all the other waifus in the show</h2>
-				<p i18n="sub-text">When you think about it, Misaka 10032 is a perfect alternative to every character in raildex...
-					<span class="small">Click on any of these cards to see the answers</span>
-				</p>
-
-				<div i18n-group="cards" id="card-container">
-					<span>
-						<input type="checkbox" id="gabriel-toogle" class="card-toogle" />
-						<label for="gabriel-toogle" i18n-group="gabriel" class="card gabriel">
-							<div i18n="question" class="question">
-								Do you need a girl who <b>isn't very nice, doesn't care about anyone</b> and thinks her hobbies are more important than anything?
-							</div>
-							<div i18n="answer" class="answer">
-								Then you need the demon who <b>doesn't care about humans and angels and is always trying to be evil</b>, rather than studying or something…<br /> Also, <b>she doesn't do her homework ON PURPOSE!!</b>
-							</div>
-						</label>
-					</span>
-					
-					<span>
-						<input type="checkbox" id="vigne-toogle" class="card-toogle" />
-						<label for="vigne-toogle" i18n-group="vigne" class="card vigne">
-							<div i18n="question" class="question">
-								Would you like a <b>cute moe demon</b> that <b>wanna be evil, but is very bad at it</b>, ending up doing nice things like teaching stuff to Gabriel?
-							</div>
-							<div i18n="answer" class="answer">
-								Then you'll probably like the <b>demon who is trying her best to become the greatest one</b>, but is frequently manipulated into <b>doing nice things</b>, even tho she is trying her best to teach Gabriel a good lesson…
-							</div>
-						</label>
-					</span>
-					
-					<span>
-						<input type="checkbox" id="raphiel-toogle" class="card-toogle" />
-						<label for="raphiel-toogle" i18n-group="raphiel" class="card raphiel">
-							<div i18n="question" class="question">
-								Do you want a girl that <b>looks cute</b>, but is actually <b>really mean</b> and only wants to see everyone suffer?
-							</div>
-							<div i18n="answer" class="answer">
-								That sounds exactly like Satania! Because becoming the greatest Arch Demon the world has ever known, <b>probably implies hurting or killing a lot of people</b>…
-							</div>
-						</label>
-					</span>
-					
-					<span>
-						<input type="checkbox" id="satania-toogle" class="card-toogle" />
-						<label for="satania-toogle" i18n-group="satania" class="card satania">
-							<div i18n="question" class="question">
-								How about the <b>greatest demon in the entire universe?</b>
-							</div>
-							<div class="answer">
-								<picture>
-									<source srcset="img/webp/debiru.webp" type="image/webp">
-									<img width="100%" src="img/debiru.png" alt="" />
-								</picture>
-							</div>
-						</label>
-					</span>
-				</div>
-			</div>
-		</div>
-
-		<div i18n-group="raviolli-raviolli" class="section">
-			<div class="left">
-				<h2 i18n="large-text">Ravioli, ravioli,<br />pls, no more bulli</h2>
-				<p i18n="sub-text">Why would you do that??? How much of a sadist do you have to be to want to bulli her???</p>
-			</div>
-
-			<div class="right image">
-				<picture>
-					<source srcset="img/webp/satania_sad.webp" type="image/webp">
-					<img src="img/satania_sad.png" alt="" />
-				</picture>
-			</div>
-		</div>
-
-
-		<div i18n-group="large-text" class="section">
-			<div class="left image">
-				<picture>
-					<source srcset="img/webp/satania_evil.webp" type="image/webp">
-					<img src="img/satania_evil.png" alt="" />
-				</picture>
-			</div>
-
-			<div class="right">
-				<h2 i18n="large-text">Her network is already spread across earth already…</h2>
-				<p i18n="sub-text">So, may you like her or not,<br /> you'll have to praise her eventually…</p>
-			</div>
-		</div>
-
-		<div i18n-group="end" class="main end">
-			<div class="back-overlay"></div>
-
-			<div class="title">
-				<h1 i18n="large-text">She's the Best.</h1>
-				<h2 i18n="sub-text">Period. The end.</h2>
-			</div>
-
-			<div class="footer">
-				<a href="https://github.com/Pizzacus/hifum.in">
-					<picture>
-						<source srcset="img/webp/github_link.webp" type="image/webp">
-						<img src="img/github_link.png" alt="" />
-					</picture>
-				</a>
-			</div>
-
-			<canvas class="snow full canvas-background"></canvas>
-		</div>
-	</div>
-
-	<script src="script.js"></script>
-
-	<script>
-		(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function() {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-101177248-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-</body>
-
+   <head>
+      <!--
+         How do you like my source code says Misaka as she laughs cleverly at this shitpost
+         
+                    (((##(((((#,,**,..,,//**,,,,,%(*#/##,,######%%%%%###%%%%%%%%%%%%%%%%%%%%%###(///**********************(#(/////,.                                                                    
+                    ####(((#%/****...,../**./#####(,/%%%%###########################################((/*,,,*/#(/*****************(/**,*,**((((((((((//*//(,(##/*///((##########                         
+                    (#%###((////,,,*,,.,##(###%%##################################################(((((((((((((/,,#%%%(**************/(/***((((((((((((((((/*///*/(/###########                         
+                    #%#((//*//(#,,,,,,***,##%%%#######%%%&&%%%%%%&%&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%###((((((((((((*(%##%#***************/#((((((((((/*/##(/******//###########                         
+                    ######%%#(#/,,,,*(##/%%%%%%%%%%&%%&&&&&&&&&&&&&&&%%%%%%%%%%%%%%%%&&&&&&&%%%%%%%%%%%%%%%%%%%%#(((((((((,*(****************(/(((((//((#((///**/*/(#(#########                         
+                    #######(#((**,,*%##%%%%%%%&%%&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#(((((((((*./*****************(#(**((####///**/((/(#(########                         
+                    #(#((###/(/**#%%%%%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#(((((((((((,,(*****************(/((###(//(((((//#(########%                         
+                    ####%%%%#(/#%%%%%%%%&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%###(((((((((((*,(******************(//((((/*((//((/#########                         
+                    /%#%%%%%%#%%%%%&%%&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%######(((((((((##*,/******************((/***,/(((#//########%                         
+                    //(#%%%%##&&&&&&&&&&&%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%%%%%%%%%&&%%%%%%%%#####(((((#((#/,#(******************(*///((/(//(#########                         
+                    /((((#%%#&&&%&&&&&&&%%%%%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%&&&&%%%%%%&&&&&&&&&&&&&&&&&%%&%%%%%%%%%%%#########%#(*#(#******************(////((((#(((((///((                         
+                    ((#(#((#%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%&&%%%%%%%%%%%%#%#%#%####(#***(***************///*((//(*(#/(///(/                         
+                    ((((((##&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%&%%%%%&%%%%%%&%%%%%#%###/***(*****,,,...    .,(*#//#(/#(//(///*                         
+                    #/(#((##&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%&&%%%&&&%%%&&%%%%%%#%#%****/(**************,.*/(/(#(##(*///*//                         
+                    (#######&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%&&&&%%%%%%%%%%%%%&&%&&&&&&&&&&&%%%%%%%.(***/#****************,/(/(####(****///                         
+                    ((#####%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%%&&&&&%&&&&&&&&&&%%%%%(#(**(/#(****/************//(###((//**///                         
+                    ####%#%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%&%&&%%%%%%&&&&%%%%&&&&&&&&&%%%#%%%(*/###****(*************#(###/(/**////                         
+                    (#%%%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%%%%%%%%%%%%%&&&&&&&&&&&&&&&&&&&&&&&&&&%&&%%%&&%%%%&&&&&%&&&%#%%%%%(*(##/***((************/#((#/(**///((                         
+                    ((%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&%%%%%%%%%%%%%%%%%%%&&&%#%%%%%%%%(/%##***/(/************(/(*/****(##/                         
+                    **%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&&&&&&%%%%%%%%%%%%%%%%%%%#%#%%%%%%%%%##%#****#(*************#////*,/(#(/                         
+                    /(%%%%%%%&&&&&&&&&&&&&&&&&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%/(#%%%%%%%%%%%%%#//((%%%%%%&%%%%%%%#/***(#/************///////((#((                         
+                    ##%#%%%%##%&&&&&&&&&&&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#//////////////////(#%###%%%%%%%%%%%#***(#(*************#//(//(#%#(                         
+                    /#%%/%%##%%&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##%///////////////////(%%%%#%%%&%%%%%%%/**(##*************((###%%%###                         
+                    /#(*%##%%%%%%&&&&%%%%%%%%%%%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##%////////******//////#%####%%%%%%%%%%/**(##/*************%%*(#%%%##                         
+                    //((/%%%%%%%%%&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%###(//////*********////((#%%%%%%%&%%%%%(**(##(*************#,(%%#(%%%                         
+                    //#,#%%%%%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%(###(///************/////(%##%%%%%%%%%%%#**(###/************(,/,(####%                         
+                    /,,.(%%%%%%%%%%%%%%%%%%%%%%%%%%%&%%%%%%%%%%&%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%(/%##(///*************/////####%%%%%%%%%%%/*(###(************//*#%%%%%%                         
+                    //..(%%%%%%%%%%%%%%%%%%%%%%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%(%%%%%%%%%#%%##%//###(///*************////(((%#%%%%%%%%%%%//(####/************((#%%%%%&                         
+                    ,,**%%%%%%%%%%%%%%%%%%%%%%%%%%%%&%%%%%%%%%%%%%%#%%%%%%%%%%%%%%%%%%%((%%%%%%%%(%%%%%///(##///*//**********///////%%##%%%%%%%&%%//(####(*****//*****#%%%%%%%#                         
+                    ,,,#%%%%%%%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%(%%%%(#%%%%%%%%%%%%%%%%%%#/#%%%%%%%##%%#%(////#%/////**********////*////#%##%%%%%%%%%(/(#####*****(/*****(##%%#%#%                         
+                    #,/%%%%#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%/%%%%/(%%%%%%%%%%%%%%%%%%//%%%%%%%#/%%%%(////(%#////////////////////////%%%###%%%%%%%#/(#####/****#(*****//(%%#((/                         
+                    ,(%%%%&%%%%%&%%&%%%%%%%%%%%%%%%%%%%%%%%%(/#%%#//%%%%%%%%%%%&%%%%%(//%%%%%%#/#%#%%%%%%%%%#(//////**********//*//////%####%#%%%%%/######(****##*****/#/#%#*/(                         
+                    %%%%%&%%%%%&%&%&%%%%%%%%%%%%%%%%(#%%%%%%//(%%(//#%%%%%%%%%%%%%%%%//#%%#%%(/(%#%///////#(//*/////*/*/*/*/***/*///////(%########%/#######****##******#/(##/%%                         
+                    #%%%%###&%%%%%%%%%%%%%%%%%%%%%%&%%&&%%%&&%%&%%#((%%%%%%%%%%%%%%%(/(%%#%%///%##////////#/////////////////***/*///////######%%(////(%####/***##/*****#//#((**                         
+                    #%%%%/#(%%%%%%%%%%&%%%%%%%%%%%%%//#%%%%(///#%////#%%%%%%%%%%%%%%//#%%##///%%/////////#///////////////////////////////%###(//////////###(***(#(*****#///((//                         
+                    (%%&*%%&&%%%%%%%%%&%%%%%%%%&%%%%///%%%%(////%(////%%%&%%%%%%%%%(/(%#%(///%//////////((////////////////////////////////#%////#(///////(##***/##*/(//(/.(%#%%                         
+                    %%%%%%%#%%%%%%%%%&&%%%%%%%%%%%%#///(%%%/////(#/////%%#%%%%%%%%%//%#%///((///////////(//((##%%%%%%%%%%%%%%%////////////////((/(#(//////##/**/##/*#**(%%***/&                         
+                    %%&&%#%%%&%%%%%%%&%%%%%%%%%%%%%#////#%%//////#/////(%%#%%%%%%%%/%%(///#///////%%%%%%%%%%%%%%%%%%%%%%%%*/%(///////////////#/////////////%/***###/#/*/%%%&%((                         
+                    %%&%%%&%&%%%%%&%%&%&%%%%%%%%%%%%/////#%(////////////#%#/#%%%%%##(///////////////*******%%%%%%%%%%%%%%%//#///////////////#////(/////////%(**/(##/(///#/%&&&&                         
+                    %%&%%&&%/&&%%%%&%&%&%%%%%%%%%%%&&&&&&&&%%%%%%%%%%%%&&&&(/(%#%%#//////////////////******/%%%%%%%%%%%%%%///////////////////(////#///////##(*//(###/(//%%%(/(%                         
+                    &&&&%(/%&&&&%%%&%%%%%%%%%%%%%&%%%&(***(&%%%%%%%%%%%%&(/%///%#%#/////////////*/////*,******/*#%%%%%%%%(/////////////////(#/////(//////###(///####(#//#/(%%%%                         
+                    %&&%##%%(*(&%%%%&%%%&%%%%&%%%%&%((&/***(%%%%%%%%%%%%%#//(////%#(////////////////////**,****(%%%%%%%(////////////////////(#////#/////%####//##(%#%((/#(%%%#%                         
+                    %&&%/%(*(*,#&%%%&%%%&%%%%&&%%%%%(///*****/(%%%%%%%%%%/////////(%(////////////////////////////////////////////////////((//#%%%#(///%######//##(##%(%/#%%#%(%                         
+                    %&%%%(#%%%%##%%%&%%%&&%%%&%%%%%%%///////****/%%%%%(/////////////((///////////////////////////////////////////////////(%/////////%%%%%%%%#//%%#/%%%(((%,#%#(                         
+                    (&%#%%%%%&&&&%&%%&%%&#%%%%%%%&%%%(///////////////////////////////////////////////////////////////////////////////////////////(%%%%%%%%%%#/(%%%/#%%###**.%##                         
+                    &&%%%%%&&&&%%&%&%&%%&((%%%&%%%%%%%#/////////////////////////((/////////////////////////////////////////////////////////////(%%%%%%%%%%%%%/#%%%//%%%/%/,%%%%                         
+                    #(%%%%%&&&&%##%%%&%%&/(%&%&%%%%%%%%%/////////////////////////#////////////////////////////////////////////////////(#(///(%%%%%%%%%%%%%%%%/%%%%(/%%%#/%***,%                         
+                    #(%%#%%%&%#%%#%%%#&%%#(&&&%&%&%%%%%%%(/////////////////////(/#///////////////////////////////////////////////////#%%%%%%%%%%%%%%%%%%%%%%%(%%%%#/#%%%#/(*##%                         
+                    #(%&(%%%%%%%&&&%#%%%&&&&&%%&&&%%%%%%&%%//////////////////////#%/////////////////////////////////////////////////#%%%%%%%%%%%%&%%%%%%%%%%%#%%%%#/%/%%%//%%(%                         
+                    /(#(&%&&%##%&#%%%%%%%&%#(&#/%&%%%%%%%%((%/////////////////////////////////////////////////////////////////////(%%%%%%%%%%%%%%&%%%%%%%%%%%%%%%%#/#&#%%%//%%%                         
+                    (((%%%&%#####%%%%&&%%%&%((&((&%%%%%%%%%(//////////////////////////////////////////////////##%#(//////////////%%%%%%%%%%%%%%%%&%%%%%%%%%%%%%%%%#/#%%%%%#//%%                         
+                                       %%%%&###(#%%%%%%%%%%%(/////////////////////////////////////////(###(((((((#(////////////#%%%%%%%%%%%%%%%%%&%%%%%%%%%%%%%%%%#/%&%%&%%((/#&&&&&&&%&&&&&&&.         
+                                       %%%&%#((#%%%%%&%%%%%%%%//////////////////////////((#%%%%%#(((((((((((((##/////////////#(%%%%%%%%%%&%%%%%%%&%%%%%%%%&%%%%%%%#/%%%%/&%%((//%%%%%%%&&&&&&&          
+                                       %&%%&#/#&&#%%%%%%%%%%%%%(//////////////////////(%###%#(((((((((((###(///////////////%//#%%%%%%%%%%&%%%%%%%&%%%&%%%%&%%%%&%%#/&&&#/(%%#%///(%##&&&&&&&&&.         
+                                       &%%%%#%#(%#%%&%%%%%%%%%%%%%(///////////////////////(##%%##(//////////////////////((////#%%%%%%%%%%&%%%%%%%&%%%&%%%%&%%%%&%%(/&&#((#&%%#&%///%%%%#%&&&&&.         
+                                       %%%/###/(##%%&%%%%%%%%%%%%%%%%#(//////////////////////////////////////////////(#///////%%%%%%%%%%%&%%%%%%&&%%%&%%%%%%%%%&%%(/%&&&#/&%%%##%%#//%&&&&&&&&.         
+                                       ##/%(((#%/#%%&#%%%%%%%%%%%%%%%%%%%%#(//////////////////////////////////////((//////////%%%%%%%%%%%&%%%%%%&%%%%&%%%&%%%%%%%%((%(/%&&&%&%%%#&%#%%(%&&&&&&.         
+                                       %/,#%#(%%/%%&&(%%%%%%%%%%%%%%%%%%%%%%%%%%(/////////////////////////////(#//////////////#%%%%%%%%%%%%%%%%%&%%%&%%%%&%%%%%%&%(#..,(&/(#&%%&#%%%&%&&&&&&&&          
+                                       (*#%%%%&((%%#%(%%%&%%%%%%%%%&&%%%%%%%%%%%%%%%%(////////////////////##//////////////////(,  ,%%%%%&%%%%%%%&%%%&%%%%&%%%%%%&%/%,*,..,&&&&%%%%&%%%&&&&&&&&          
+                                       %(#/(&(%/#%#%&(#%%&%%%%%%%%%%&%%%%%%%%%%%%&%%%%%%%%%(/////////(#(//////////////////////(/*  #%%%%%%%%%%%&%%%&%%%%%&%%%%%%%%/&%&%&&&&#%%&%&%%&&%%%&&&&&&.         
+                                       //*#%(%/#&%&&&%(%%%&%%%%%%%%%&&%%%%%%%%%%%%&%%%%%%%%%%%%///////////////////////////////#*,  *###%%%%%%%%&%%%&%%%%%&&%%%%%%&#**#&&%%%%###&&&%%&&&&&&&&&&.         
+                                       (*///%(%%#%&&%&(#%%&&%%%%%%%%%%&%%%%%%%%%%%%&%%%%%%%%(**#///////////////////////////(/,,,,  .%##%%%%%%%%&%%%,&%%%%%&%%%%%%%&&&&&&&%&&%%/&&%%##&&&&&&&&&.         
+                                       #/#%%#&%%%*%%%%#(%%&#&%%%%%%%%&&%&%%%%%%%%%%%%%%%#**,*,,/////////////////////////(/,,,,,,,   /#%##%%%%%%%%&%%&%%%&/*(%%%%%%&&&%%%&&&&&#*%&&#%&&%&&&&&&&.         
+                                       (/(%&%%%%&#%%##%/#%&%#%&%%%%%%%&/*&%%%%%%%%%%%%%**,*,,,,*#////////////////////#*,,,,,,,,,,     (######%%%%/,*%%%%%/(%&&%%%%%&&%%%%(%/&%%&%&#%%&&&&&&&&&.         
+                                       //%%%#%%%%%%##/(%/%&%%%%&%%%%%%%&&&&%%%%%%%%%%%*,,,,,,,(,#////////////////(/,,,,,,,,,,,,,,       #####%%%*(%((%%%%#&&%&&%%%%&%(&%%%#.(%%%&&&&&&&&&&&&&&          
+                                       /&%///%%/#%%(#(###(%%%%#%%&%%%%%%&&&&&%%%%%%%(*,,,,,,,,*(#////////////((*,,,,,,,,,,,,,,,,,,,      #####%(..,*/%%%%&%***#%&%%%&&#%##%%.%%%&&&&&&&&&&&&&&.         
+                                       %%%#/#%%%%%##%%%%##(&%%##%#%%%%%%%%(%%&%%%(**,,,,,,,,,,,*#////////#(*,,,,,,,,,,,,,,,,,,,,,,,,.    *..##..(#/((%#%%%%((**#%%%%%%&%%%%#,%%%&&&&&&&&&&&&&&.         
+                                       %(*,,/*(%%%&&&%%#%%#%&/*%&(*,#%%%%%%%(%#%,*,,,,,,,,,,,,,//,##(*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,  *..(*......(#%%%#/**/%#*(*#&%%(*(%%(##%&%&&&&&&&&&&&&&.         
+                                       %%,(&&&%%&&%&&%&%(%#%#(((#((/,/#%%%*.../*,,,,,,,,,,,,,//,,,(**(*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*./. .........(%,,###/((#%%%%%%(%%%..&%&%%&&&&&%&%&&&&          
+                                       &&%%&&%&&%##&%%&#*/((##(##(//#%*..../((/**,,,,,,,,,,,#,,,,,*(,,*(,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,**,.,*,..........*...,#*/(##%%(%%%%,,/%%%(*%&%&&&%&&&&&&.         
+                                       &%&&&%&&%%#%/*#/,((/*#%%###*....,(((((#*,,,,,,,,,,,/*,,,,,/**,,,(*,,,,,,,,,,,,,,,,,,,,,,,,,,,,**,/////////,.............,#%#/.,,*(  ,/.*%%%&%#####&&&&&.         
+                                       %%&&&&&&%((**/((#.......(....*((((((((/**,,,,,,,*/(,,,,,,/*,,,,,,(*,,,,,,,,,,,,,,,,,,,,,,,,,,/(((((((((//////*...........//,......(/#,,%%(%%%&&&&&&&&&&.         
+                                       &&&&&&&&#/*#%,/......./#(((((((((((((#***,,,,,,*#,,,,,,,*/,,,,,,,,(,,,,,,,,,,,,,,,,,,,,,,,,,#(((((((((((((((/////.....,,............/%##%%%&&%%%&&&&&&%          
+                                       &&&&&&%%*(.  /...,/(((#((((((((((((((#******,*#*,,,,,,,*(,,,,,,,,,,(,,,,,,,,,,,,,,,,,,,,,,*%(((((((((((((((((((((////#*..........,/((##/.#&&&&%&&&&&&&&          
+                                       &&&%%%(#.   #../((((##((((((((((((((%(******(/*,,,,,,,,#,,,,,,**,*#/(,,,,,,,,,,,,,,,,*,,*(#((((((((((((((((((((((((#(///////.*,        ,%%%%%%&&&&&&&&&          
+                                       ((%%%#(    /./((((((%((((((((((((((%#/****/#,*(*,**,,,,(,,,,,,*,*,,,*#*,,,,,,,,,,,******%#((((((((((((((((((((((((%((((/////*             #%%%&&&%%%&&%          
+                                       %#%%%/,.  *((((((((%((((((((((((((%(#/**(%%******(/**,,*(,,,,,,*,,*,***#*,************#(#((((((((((((((((((((((((%(((((((/#,,,,,,,,,,,     .%%%&&&&&&&&          
+                                       /*(%# ( .*/(((((((%#(((((((((((((##((#(&(%%********,*(((/,**(#/**,**,/%%%/**********#((%((((((((((((((((((((((((%(((((((((,,,,,,,,,,,,,  ,.  %%&&&&&&#,          
+                                       #(#%  /.**#((((((##(((((#((##(((##(((#&##%%********,*(/,*,**********%%%#((#/*****/%(((##((((((((((((((((((((((#%(((((((#/**,,,,,,,,,,,(*     (%%&&&&&&&.         
+                                       //(/  /***#((((((%(#(##%########%((((%&(#&#*********(*************%&%#((((%&&&((((((((%((((((((((((((((((((((#%(((((((#*****,,,,,,,,#,,,,    .%%&%&&&&&.         
+                                       (%%.  (**/#(((((##((#%#########%#(((#&&(%%#*******//*,**********%%&%((((%&&&(((((((((%((((((((((#(###(((((((#%(((((((%***,***,,,,,(*,,,,,.    %&%&&&&&&.         
+                                       (%#  .(**/#(((((%###%#########%######&&(%&#*******(***********/&&%((((%&&&#((((((((#%###################(((#%(((((((#*******,*,,//,,,,,,,,.   %%%%&&&&&.         
+                                       %%*  ,#**(#((((#%(#%#########%#######&%(#&%******#**********/&&&((((#&&&########(########(##########((##(((%(((((((%*******,,**(*,,,,,,,,,,   (%&&&&&&&.         
+                                       #%   */**/#((((#%(#%################%&%(#&%******#*********%&&#(((#&&&#############&####################((((((((((%**********(*,,,,,,,,,,,,,  *%%%&&&&&.         
+         
+         -->
+      <meta charset="UTF-8">
+      <meta name="keywords" content="Raildex, Misaka, Misaka Mikoto, Misaka Imouto, Misaka 10032, Toaru, Toaru Majutsu no Index, moe, waifu, Mikoto, Railgun, Sisters, cute, anime, manga, Index, Touma, Kamijou, Kamijou Touma">
+      <meta name="description" content="Discover why Misaka 10032 is the best character, clone, and waifu from raildex, and, maybe, from every anime and manga out there!">
+      <meta name="author" content="Pizzacus">
+      <meta name="theme-color" content="#EE6666">
+      <link rel="icon" sizes="192x192" href="/favicon.png">
+      <link rel="apple-touch-icon" href="/favicon.png">
+      <meta name="msapplication-square310x310logo" content="/favicon.png">
+      <meta property="og:title" content="Misaka 10032: The best Waifu. Ever.">
+      <meta property="og:url" content="https://misakanet.page">
+      <meta property="og:type" content="website">
+      <meta property="og:description" content="Misaka 10032 IS the BEST waifu, no really, she is, if you don't believe me, this website will convince you.">
+      <meta property="og:image" content="/favicon.png">
+      <meta property="og:image:width" content="425">
+      <meta property="og:image:height" content="425">
+      <title>Misaka 10032: The best Waifu. Ever.</title>
+      <link href="https://use.typekit.net/tro1mso.css" rel="stylesheet" crossorigin="anonymous">
+      <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" crossorigin="anonymous">
+      <link href="style.css" rel="stylesheet">
+      <link rel="preload" href="img/back.jpg" as="image">
+   </head>
+   <body>
+      <!-- Webp support detection for CSS --> <img style="position: absolute;top: -1000px;" src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA" onload="document.body.classList.add('has-webp')">
+      <div i18n-group="main-intro" class="intro">
+         <div class="main">
+            <div class="back-overlay"></div>
+            <div class="title">
+               <h1 i18n="name" id="logo">Misaka 10032</h1>
+               <p lang="ja">ミサカ10032号</p>
+               <h2 i18n="best-waifu-ever">The best Waifu. <b>Ever.</b></h2>
+               <div class="button-container"><span><a i18n="join-discord" class="button discord" href="https://discord.gg/xhxrb4A"><i class="fab fa-discord"></i>Join the Discord</a><br><span id="discord-count" i18n="discord-count"><span id="discord-number"></span> members </span></span><span><a i18n="join-reddit" class="button reddit" href="https://www.reddit.com/r/OneTrueBiribiri/"><i class="fab fa-reddit-alien"></i>Join the Subreddit</a><br><span id="reddit-count" i18n="reddit-count"><span id="reddit-number"></span> subscribers</span></span><br><span i18n="language-warning" class="small translate-only">(These communities use English as their primary language)</span></div>
+               <span i18n="scroll-notice" class="scroll-notice"><i class="fas fa-arrow-down"></i>Scroll to learn more!</span>
+               <p style="display: none; /* Now the mobile version is good enough */" i18n="mobile-disclaimer" class="mobile disclaimer">I am really sorry, but the mobile version of this website was kinda rushed and <b>it's really shit</b>, I didn't think anyone would visit it on a phone tbh.</p>
+            </div>
+            <div id="translator-mode">
+               <button id="download">Download</button> <button id="upload">Browse…</button> 
+               <select id="format">
+                  <option id="yaml" value="yaml">YAML</option>
+                  <option value="json">JSON</option>
+               </select>
+            </div>
+            <div class="footer">
+               <div class="language-select">
+                  <div id="language-protip" i18n-skip>
+                     <span id="language-protip-text" i18n="language-protip">
+                        <!-- Note for translators, change "English" to the name of your language of course --> Would you like to view this website in <b>English</b>?<br>Use this drop-down to select a language! 
+                     </span>
+                     <i id="close-language-protip" class="fas fa-times"></i>
+                  </div>
+                  <!-- <div class="select-wrapper">
+                     <div i18n="language-select" class="select-button">Language <i class="fas fa-angle-down"></i></div>
+                     <select id="locale-select" lang="mul">
+                        <option disabled="disabled" title="German" value="de" lang="de">Deutsch</option>
+                        <option title="English" value="en-GB" lang="en-GB">English</option>
+                        <option disabled="disabled" title="French" value="fr" lang="fr">Français</option>
+                        <option disabled="disabled" title="Russian" value="ru" lang="ru">Русский</option>
+                        <option disabled="disabled" title="Japanese" value="ja" lang="ja">日本語</option>
+                     </select>
+                  </div> -->
+               </div>
+               <div class="credits" i18n="credits">A glorious shitpost by some pizza named <b title="Kenyérlángos">Pizzacus&trade;</b> and adapted by <b title="Kenyérlángos">Sergster1&trade;</b> aka <b title="Kenyérlángos">Sergio#Cl0nefagCE</b></div>
+            </div>
+            <canvas class="snow full canvas-background"></canvas>
+         </div>
+         <div class="music-player-container" id="music-player-container" i18n-group="music-player">
+            <div class="music-player display-intro" id="music-player">
+               <div class="play-controller"><i class="fas fa-play"></i></div>
+               <div class="intro-text" i18n-group="intro"><b i18n="bold-text">Wanna listen to a cute song while browsing this page?</b> <span class="small" i18n="small-text">Press the play button on the left!</span></div>
+               <div class="loading"><i class="fas fa-spinner fa-pulse"></i></div>
+               <div class="music-details">
+                  <div class="name" i18n-group="metadata"><span class="title" i18n="title">「ひそやかな欲望 ~ミサカは、発生させます~」</span> <span class="author" i18n="author">ささき のぞみ</span></div>
+                  <div class="countdown small hidden" i18n="countdown">10032 sings in <span id="time-until-satania"></span> seconds.</div>
+                  <div class="time-controller">
+                     <div class="time-bar">
+                        <div class="elapsed">
+                           <div class="slider-tip"></div>
+                        </div>
+                     </div>
+                     <div class="volume">
+                        <i class="fas fa-volume-down"></i>
+                        <div class="volume-box">
+                           <div class="volume-bar">
+                              <div class="volume-fill">
+                                 <div class="volume-tip"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="time-progression"></div>
+                  </div>
+               </div>
+            </div>
+            <p i18n="footer">You can also listen on <a href="https://www.youtube.com/watch?v=_qE9oYCEt6E">YouTube</a> and <a href="https://soundcloud.com/drama-cd1/hisoyakana-yokubou-misaka-wa">SoundCloud</a>.</p>
+            <div id="misaka10032-dance"></div>
+            <canvas id="sound-visualizer"></canvas>
+         </div>
+         <div class="dev-announcement-container" i18n-group="dev-announcement" style="display: none">
+            <div class="dev-announcement">
+               <h1 i18n="line-1">We're looking for help!</h1>
+               <h2 i18n="line-2">For over two years, New&nbsp;Game8 has been an amazing online community that connected thousands of people.</h2>
+               <p i18n="line-3">Now, we want to take it to the next level and expand to new horizons!<br>And for that, <b>we're looking for web developers to help us.</b></p>
+               <p i18n="line-4">If you have decent skills in <b>web programming</b> and you want to learn more,<br>check out our blog post about it!</p>
+               <p>
+                  <span i18n="line-5">Hopefully, we'll see you soon.</span> 
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" width="30">
+                     <g transform="matrix(1.25 0 0 -1.25 0 45)">
+                        <path fill="#dd2e44" d="M2.067 24.68c0 8.8 12.184 12.06 15.933 1.875 3.749 10.186 15.933 6.925 15.933-1.874C33.933 15.12 18 3 18 3S2.067 15.12 2.067 24.68"/>
+                     </g>
+                  </svg>
+               </p>
+               <a href="https://blog.misakanet.page/posts/join-the-satania-dropout-technical-team/" i18n="line-6">Learn More →</a>
+            </div>
+         </div>
+      </div>
+      <div class="scroll">
+         <div i18n-group="become-a-misaka-10032-follower" class="section">
+            <div class="left image">
+               <picture>
+                  <source srcset="img/webp/misaka10032_thumbsup.webp" type="image/webp">
+                  <img src="img/misaka10032_thumbsup.png" alt="">
+               </picture>
+            </div>
+            <div class="right">
+               <h2 i18n="large-text">Become a clonefag today!</h2>
+               <p i18n="sub-text"><b>There are no steps to becoming a clonefag</b>, all&nbsp;you have to do is to accept that Misaka Imouto are the&nbsp;best&nbsp;characters <i>but 10032 is the bestest</i></p>
+               <span i18n="small-text" class="small">Well, If you could make Misaka Imouto memes and shitposts, that would help us a lot…</span>
+            </div>
+         </div>
+         <div i18n-group="she-is-beautiful" class="section">
+            <div class="left">
+               <h2 i18n="large-text">A lovely smile.<br>Two magnificent eyes.<br>A stunning appearance.<br>And a cool set of goggles.<br></h2>
+               <p i18n="sub-text">She's a really <b>pulchritudinous</b> person</p>
+               <span i18n="small-text" class="small">We clonefags are very cultured people, so we only use a very cultured language</span>
+            </div>
+            <div class="right image">
+               <picture>
+                  <source srcset="img/webp/misaka10032_cute.webp" type="image/webp">
+                  <img src="img/misaka10032_cute.png" alt="">
+               </picture>
+            </div>
+         </div>
+         <div i18n-group="end-the-waifu-war" class="section">
+            <div class="left image">
+               <picture>
+                  <source srcset="img/webp/misaka10032_happy.webp" type="image/webp">
+                  <img src="img/misaka10032_happy.png" alt="">
+               </picture>
+            </div>
+            <div class="right">
+               <h2 i18n="large-text">The best Misaka clone just&nbsp;for&nbsp;you.</h2>
+               <p i18n="sub-text">Let's end the waifu war with the <b>most kawaii clone in the world</b>!</p>
+            </div>
+         </div>
+         <div class="section">
+            <div i18n-group="she-is-perfect" class="center">
+               <h2 i18n="large-text">In short, she's just perfect.</h2>
+               <p i18n="sub-text">Even Google knows.</p>
+               <div id="searchbar" class="google-searchbar">
+                  <span i18n="searchbar-name">Misaka 10032</span>
+                  <div class="buttons">
+                     <picture>
+                        <source srcset="img/webp/google_mic.webp" type="image/webp">
+                        <img id="search-by-voice" src="img/google_mic.png" height="24px">
+                     </picture>
+                     <img id="search-button" src="img/google_search.svg" height="24px">
+                  </div>
+               </div>
+               <br>
+               <div i18n-group="google-definition" class="google-definition">
+                  <h1 i18n="name" id="definition-name">perfection</h1>
+                  <h3><span i18n="prononciation">/pəˈfɛkʃ(ə)n/</span> <i id="listen" class="fas fa-volume-up"></i></h3>
+                  <div i18n="noun" class="noun">noun</div>
+                  <div i18n-group="definition-1" class="definition no-bullet">
+                     <span i18n="definition">the state or quality of being perfect.</span>
+                     <div class="example">
+                        <span i18n="example">"the satiny perfection of <b>Misaka 10032</b>'s skin"</span>
+                        <div class="synonyms"><span><i i18n="synonyms">synonyms:</i></span> <span i18n="synonyms-list">Misaka 10032, flawlessness, excellence, superbness, sublimity, exquisiteness, magnificence, perfectness, faultlessness, impeccability, immaculateness, exemplariness<br>"the satiny perfection of her skin"</span></div>
+                     </div>
+                  </div>
+                  <div i18n-group="definition-2" class="definition">
+                     <span i18n="definition">a person or thing considered to be perfect.</span>
+                     <div class="example">
+                        <span i18n="example">"I am told that <b>10032</b> is perfection itself"</span>
+                        <div class="synonyms"><span><i i18n="synonyms">synonyms:</i></span> <span i18n="synonyms-list">Misaka 10032, the ideal, a cutie, the net plus ultra, the beau idéal, a nonpareil, the crème de la crème, the last word, the ultimate, a dream; <i>informal</i> one in a million, the tops, the best/greatest thing since sliced melon bread, the bee's knees; <i>archaic</i> a nonesuch<br>"for her, he was still perfection"</span></div>
+                     </div>
+                  </div>
+                  <div i18n-group="definition-3" class="definition">
+                     <span i18n="definition">the action or process of improving something until it is faultless.</span>
+                     <div class="example">
+                        <span i18n="example">"I worked all day on the perfection of my <b>Misaka 10032</b> drawing"</span>
+                        <div class="synonyms"><span><i i18n="synonyms">synonyms:</i></span> <span i18n="synonyms-list">Misaka 10032, improvement, betterment, refinement, refining, perfecting, polishing, amelioration; <i>rare</i> melioration<br>"the perfection of new mechanisms of economic management"</span></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div i18n-group="no-one-can-compete" class="section">
+            <div class="center">
+               <h2 i18n="large-text">No one can compete.</h2>
+               <p i18n="sub-text">Just think about it, why would Mikoto, Misaki or Saten be the best?</p>
+               <table i18n-group="table">
+                  <thead>
+                     <tr i18n-group="names">
+                        <th class="category"></th>
+                        <th i18n="misaka10032" class="highlight">Misaka 10032</th>
+                        <th i18n="misaka">Mikoto</th>
+                        <th i18n="misaki">Misaki</th>
+                        <th i18n="saten">Saten</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr i18n-group="goals-in-life">
+                        <td i18n="category" class="category">Has goals in life</td>
+                        <td class="highlight"><i class="fas fa-check"></i> <span i18n="misaka10032" class="small">(winning the Toumab owl)</span></td>
+                        <td><i class="fas fa-check"></i> <span i18n="misaka" class="small">(being on the same stage as Touma <i>whatever that means</i>)</span></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr i18n-group="hard-challenges">
+                        <td i18n="category" class="category">Has surmounted hard challenges</td>
+                        <td class="highlight"><i class="fas fa-check"></i> <span i18n="misaka10032" class="small">(Doing emergency first aid without anesthesia on Christmas Eve)</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr i18n-group="tries-her-best">
+                        <td i18n="category" class="category">Always has cute clothes</td>
+                        <td class="highlight"><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i> <span i18n="misaka" class="small">Yeah, okay she wins this one too</span></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr i18n-group="powerfull-allies">
+                        <td i18n="category" class="category">Has powerful allies</td>
+                        <td class="highlight"><i class="fas fa-check"></i> <span i18n="misaka10032" class="small">(Touma, Last Order, Accelerator, Misaka... The list goes on...)</span></td>
+                        <td></td>
+                        <td><i class="fas fa-check"></i> <span i18n="misaki" class="small">(Shocking Pink and Emerald)</span></td>
+                        <td></td>
+                     </tr>
+                     <tr i18n-group="tragic-backstory">
+                        <td i18n="category" class="category">Has a deep, tragic backstory</td>
+                        <td class="highlight"><i class="fas fa-check"></i> <span i18n="misaka10032" class="small">(Has the memories of 10031 clones who died before her)</span></td>
+                        <td></td>
+                        <td><i class="fas fa-check"></i> <span i18n="misaki" class="small"><i>ABOO HOO MY BOYFRIEND DOESN'T REMEMBER ME :(</i></span></td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td i18n="member-favorites" class="category">Number of member favourites on MAL*</td>
+                        <td class="highlight" i18n-reformat="14133">14133</td>
+                        <td i18n-reformat="13522">13522</td>
+                        <td i18n-reformat="500">500</td>
+                        <td i18n-reformat="1048">1048</td>
+                     </tr>
+                     <tr>
+                        <td i18n="subreddit-subs" class="category">Number of subs on their subreddit*</td>
+                        <td class="highlight"><span i18n-reformat="8164">8,164</span> <a href="https://www.reddit.com/r/OneTrueBiribiri/" class="small">/r/OneTrueBiriBiri</a></td>
+                        <td><span i18n-reformat="8164">8,164</span> <a href="https://www.reddit.com/r/OneTrueBiribiri/" class="small">/r/OneTrueBiriBiri</a></td>
+                        <td><span i18n-reformat="147">147</span> <a href="https://www.reddit.com/r/OneTrueMentalOut/" class="small">/r/OneTrueMentalOut</a></td>
+                        <td><span i18n-reformat="594">594</span> <a href="https://www.reddit.com/r/OneTrueSaten/" class="small">/r/OneTrueSaten</a></td>
+                     </tr>
+                     <tr i18n-group="e-hentai">
+                        <td i18n="category" class="category">Number of Doujinshi on e-hentai*</td>
+                        <td class="highlight"><span i18n-reformat="963">963</span> <span i18n="misaka10032" title="Misaka to Misaka to Misaka wa Misaka" class="small">(One of which is hilarious)</span></td>
+                        <td i18n-reformat="850">850</td>
+                        <td i18n-reformat="288">288</td>
+                        <td i18n-reformat="198">198</td>
+                     </tr>
+                     <tr>
+                        <td i18n="rule34" class="category">Number of pics on rule34.xxx*</td>
+                        <td class="highlight" i18n-reformat="608">608</td>
+                        <td i18n-reformat="358">358</td>
+                        <td i18n-reformat="167">167</td>
+                        <td i18n-reformat="127">127</td>
+                     </tr>
+                     <tr>
+                        <td i18n="gelbooru" class="category">Number of pics on gelbooru*</td>
+                        <td class="highlight" i18n-reformat="1064+8685">9722</td>
+                        <td i18n-reformat="8658">8658</td>
+                        <td i18n-reformat="1376">1376</td>
+                        <td i18n-reformat="2332">2332</td>
+                     </tr>
+                     <tr i18n-group="Annoying">
+                        <td i18n="category" class="category">Has annoying followers</td>
+                        <td></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i> <span i18n="saten" class="small">fuck you mobile poster</span></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <span i18n="as-of">*As of <span id="last-updated"></span></span>
+            </div>
+         </div>
+         <div class="section">
+            <div class="center" i18n-group="the-others-are-trash">
+               <h2 i18n="large-text">The other characters are trash, no exception.</h2>
+               <p i18n="sub-text">They may be cute, but when you know the facts, they really aren't.</p>
+               <div i18n-group="the-others-are-trash" class="compare">
+                  <div i18n-group="Misaka" class="character Misaka">
+                     <picture>
+                        <source srcset="img/webp/portraits/misaka.webp" type="image/webp">
+                        <img src="img/portraits/misaka.jpg">
+                     </picture>
+                     <div class="name">
+                        <span i18n="name">Misaka</span>
+                        <div i18n="name-detail" class="small">Mikoto<br><span lang="ja">御坂 美琴</span></div>
+                     </div>
+                     <ul i18n-group="description">
+                        <li i18n="argument-1"><b>Angry Incarnate</b></li>
+                        <li i18n="argument-2">No seriously, she's constantly mad over stupid shit</li>
+                        <li i18n="argument-3">People only like her because she may be relatable for them</li>
+                        <li i18n="argument-4"><b>Has she really even had a character development arc at all?</b></li>
+                        <li i18n="argument-5"><b>She's used for a ton of shitty fanservice</b>, like spats-shots and other questionable camera angles because she wears spats</li>
+                        <li i18n="argument-6"><b>At the very least she's the reason for 10032 existing so its not so bad</b></li>
+                     </ul>
+                  </div>
+                  <div i18n-group="Misaki" class="character Misaki">
+                     <picture>
+                        <source srcset="img/webp/portraits/misaki.webp" type="image/webp">
+                        <img src="img/portraits/misaki.jpg">
+                     </picture>
+                     <div class="name">
+                        <span i18n="name">Misaki</span>
+                        <div i18n="name-detail" class="small">Shoukuhou<br><span lang="ja">食蜂 操祈</span></div>
+                     </div>
+                     <ul i18n-group="description">
+                        <li i18n="argument-1"><b>She's out of shape</b></li>
+                        <li i18n="argument-2">Manipulative</li>
+                        <li i18n="argument-3">Will betray you because MUH BOYFRIEND DOESNT REMEMBER ME :(</li>
+                        <li i18n="argument-4"><b>People only like her because of her eyes and her big tits</b></li>
+                        <li i18n="argument-5">Her fans are perverts AND horrible people</li>
+                        <li i18n="argument-6">100% confirmed slut</li>
+                     </ul>
+                  </div>
+                  <div i18n-group="Saten" class="character Saten">
+                     <picture>
+                        <source srcset="img/webp/portraits/saten.webp" type="image/webp">
+                        <img src="img/portraits/saten.jpg">
+                     </picture>
+                     <div class="name">
+                        <span i18n="name">Saten</span>
+                        <div i18n="name-detail" class="small">Ruiko<br><span lang="ja">佐天 涙子</span></div>
+                     </div>
+                     <ul i18n-group="description">
+                        <li i18n="argument-1"><b>BOOOOOOORING</b></li>
+                        <li i18n="argument-2">No really, she never does anything interesting except has a bat</li>
+                        <li i18n="argument-3">Like, she's all normal and stuff</li>
+                        <li i18n="argument-4"><b>Her followers shit up the threads</b></li>
+                        <li i18n="argument-5"><b>She gets a ton of filler dedicated to her because Nagai is a hack</b></li>
+                        <!-- <li i18n="argument-6"><font color="red"><marquee>FUCK OFF NAGAI</marquee><br><font color="green"><marquee>FUCK OFF NAGAI</marquee><br><font color="blue"><marquee>FUCK OFF NAGAI</marquee><br></li> -->
+                        <li i18n="argument-6"><marquee><span class="rainbow"><b>FUCK OFF NAGAI<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FUCK OFF NAGAI<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FUCK OFF NAGAI</b></span></marquee></li>
+
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div i18n-group="fanarts" class="section">
+            <div class="left image slideshow">
+               <picture x-source="https://www.pixiv.net/en/artworks/79258952" class="shown">
+                  <source srcset="img/webp/fanarts/fanart1.webp" type="image/webp">
+                  <img height="500px" src="img/fanarts/fanart1.jpg" alt="">
+               </picture>
+               <picture x-source="https://www.pixiv.net/en/artworks/57248356">
+                  <source srcset="img/webp/fanarts/fanart2.webp" type="image/webp">
+                  <img height="500px" src="img/fanarts/fanart2.jpg" alt="">
+               </picture>
+               <picture x-source="https://www.pixiv.net/en/artworks/49363878">
+                  <source srcset="img/webp/fanarts/fanart3.webp" type="image/webp">
+                  <img height="500px" src="img/fanarts/fanart3.jpg" alt="">
+               </picture>
+               <picture x-source="https://www.pixiv.net/en/artworks/46354719">
+                  <source srcset="img/webp/fanarts/fanart4.webp" type="image/webp">
+                  <img height="500px" src="img/fanarts/fanart4.jpg" alt="">
+               </picture>
+               <picture x-source="https://www.pixiv.net/en/artworks/39568055">
+                  <source srcset="img/webp/fanarts/fanart5.webp" type="image/webp">
+                  <img height="500px" src="img/fanarts/fanart5.jpg" alt="">
+               </picture>
+               <picture x-source="https://www.pixiv.net/en/artworks/37179734">
+                  <source srcset="img/webp/fanarts/fanart6.webp" type="image/webp">
+                  <img height="500px" src="img/fanarts/fanart6.jpg" alt="">
+               </picture>
+               <picture x-source="https://www.pixiv.net/en/artworks/35881751">
+                  <source srcset="img/webp/fanarts/fanart7.webp" type="image/webp">
+                  <img height="500px" src="img/fanarts/fanart7.jpg" alt="">
+               </picture>
+               <picture x-source="https://www.pixiv.net/en/artworks/17412840">
+                  <source srcset="img/webp/fanarts/fanart8.webp" type="image/webp">
+                  <img height="500px" src="img/fanarts/fanart8.jpg" alt="">
+               </picture>
+               <picture x-source="https://www.pixiv.net/en/artworks/35943014">
+                  <source srcset="img/webp/fanarts/fanart9.webp" type="image/webp">
+                  <img height="500px" src="img/fanarts/fanart9.jpg" alt="">
+               </picture>
+               <a i18n="source" class="source">Source</a>
+            </div>
+            <div class="right">
+               <h2 i18n="large-text">Fanarts that are impossibly&nbsp;kawaii!</h2>
+               <p i18n="sub-text">Just look at this, this is adorable.
+               <noscript>Slideshow requires JavaScript.</noscript>
+               </p>
+            </div>
+         </div>
+         <div i18n-group="autism" class="section">
+            <canvas class="snow full canvas-background"></canvas>
+            <div class="left">
+               <h2 i18n="large-text">Also, she's not an autist, stop&nbsp;saying&nbsp;that</h2>
+               <p i18n="sub-text">Autistic people often have trouble communicating, staying quiet in their own corner all the time, Misaka 10032&nbsp;isn't like that at all.<br><b>She's probably less autistic than you are!</b></p>
+               <span i18n="small-text" class="small">And while she was about to shoot a kid,<br>it's because Last Order was asking for it!</span>
+            </div>
+            <div class="right image">
+               <picture>
+                  <source srcset="img/webp/misaka10032_sparkle.webp" type="image/webp">
+                  <img src="img/misaka10032_sparkle.png" alt="">
+               </picture>
+               <div class="nose-button" onclick="startSnow()"></div>
+            </div>
+         </div>
+         <div i18n-group="pope-francis" class="section background pope-francis">
+            <div class="back-overlay"></div>
+            <div class="center">
+               <h2 i18n="large-text">Even Pope Francis loves Misaka 10032.</h2>
+               <p i18n="sub-text">"Misaka 10032 is my number two waifu, the number one being Kamijou Touma of&nbsp;course!<br>I bless her and all her followers!"</p>
+            </div>
+         </div>
+         <div i18n-group="flipping-cards" class="section">
+            <div class="center">
+               <h2 i18n="large-text">She replaces all the other waifus in the show</h2>
+               <p i18n="sub-text">When you think about it, Misaka 10032 is a perfect alternative to every character in raildex... <span class="small">Click on any of these cards to see the answers</span></p>
+               <div i18n-group="cards" id="card-container">
+                  <span>
+                     <input type="checkbox" id="gabriel-toogle" class="card-toogle"> 
+                     <label for="gabriel-toogle" i18n-group="gabriel" class="card gabriel">
+                        <div i18n="question" class="question">Do you need a girl who <b>is very nice, doesn't care about anyone but you</b> and wants to support you with whatever you do?</div>
+                        <div i18n="answer" class="answer">Then you need the clone who <b>doesn't care about the magic and science side and is just trying to be by your side and will work towards it</b>, rather than being a freeloader or something… You know, like Index?</div>
+                     </label>
+                  </span>
+                  <!-- <span>
+                     <input type="checkbox" id="vigne-toogle" class="card-toogle"> 
+                     <label for="vigne-toogle" i18n-group="vigne" class="card vigne">
+                        <div i18n="question" class="question">Would you like a <b>cute moe </b> that <b>wanna be evil, but is very bad at it</b>, ending up doing nice things like teaching stuff to Gabriel?</div>
+                        <div i18n="answer" class="answer">Then you'll probably like the <b>demon who is trying her best to become the greatest one</b>, but is frequently manipulated into <b>doing nice things</b>, even tho she is trying her best to teach Gabriel a good lesson…</div>
+                     </label>
+                  </span>
+                  <span>
+                     <input type="checkbox" id="raphiel-toogle" class="card-toogle"> 
+                     <label for="raphiel-toogle" i18n-group="raphiel" class="card raphiel">
+                        <div i18n="question" class="question">Do you want a girl that <b>looks cute</b>, but is actually <b>really mean</b> and only wants to see everyone suffer?</div>
+                        <div i18n="answer" class="answer">That sounds exactly like Satania! Because becoming the greatest Arch Demon the world has ever known, <b>probably implies hurting or killing a lot of people</b>…</div>
+                     </label>
+                  </span>
+                  <span>
+                     <input type="checkbox" id="satania-toogle" class="card-toogle"> 
+                     <label for="satania-toogle" i18n-group="satania" class="card satania">
+                        <div i18n="question" class="question">How about the <b>greatest demon in the entire universe?</b></div>
+                        <div class="answer">
+                           <picture>
+                              <source srcset="img/webp/debiru.webp" type="image/webp">
+                              <img width="100%" src="img/debiru.png" alt="">
+                           </picture>
+                        </div>
+                     </label>
+                  </span> -->
+               </div>
+            </div>
+         </div>
+         <div i18n-group="raviolli-raviolli" class="section">
+            <div class="left">
+               <h2 i18n="large-text">Ravioli, ravioli,<br>pls, no more bulli</h2>
+               <p i18n="sub-text">Why would you do that??? How much of a sadist do you have to be to want to bulli her???</p>
+            </div>
+            <div class="right image">
+               <picture>
+                  <source srcset="img/webp/misaka10032_sad.webp" type="image/webp">
+                  <img src="img/misaka10032_sad.png" alt="">
+               </picture>
+            </div>
+         </div>
+         <div i18n-group="large-text" class="section">
+            <div class="left image">
+               <picture>
+                  <source srcset="img/webp/misaka10032_evil.webp" type="image/webp">
+                  <img src="img/misaka10032_evil.png" alt="">
+               </picture>
+            </div>
+            <div class="right">
+               <h2 i18n="large-text">Her network is already spread across earth already…</h2>
+               <p i18n="sub-text">So, may you like her or not,<br>you'll have to praise her eventually…</p>
+            </div>
+         </div>
+         <div i18n-group="end" class="main end">
+            <div class="back-overlay"></div>
+            <div class="title">
+               <h1 i18n="large-text">She's the Best.</h1>
+               <h2 i18n="sub-text">Period. The end.</h2>
+            </div>
+            <div class="footer">
+               <a href="https://github.com/Sergster1/misakanet.page">
+                  <picture>
+                     <source srcset="img/webp/github_link.webp" type="image/webp">
+                     <img src="img/github_link.png" alt="">
+                  </picture>
+               </a>
+            </div>
+            <canvas class="snow full canvas-background"></canvas>
+         </div>
+      </div>
+      <script src="script.js"></script><script>(function(i, s, o, g, r, a, m) {
+         i['GoogleAnalyticsObject'] = r;
+         i[r] = i[r] || function() {
+         	(i[r].q = i[r].q || []).push(arguments)
+         }, i[r].l = 1 * new Date();
+         a = s.createElement(o),
+         	m = s.getElementsByTagName(o)[0];
+         a.async = 1;
+         a.src = g;
+         m.parentNode.insertBefore(a, m)
+         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+         
+         ga('create', 'UA-163690495-1', 'auto');
+         ga('send', 'pageview');
+      </script>
+   </body>
 </html>

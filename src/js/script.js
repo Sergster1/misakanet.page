@@ -3,15 +3,15 @@ import 'whatwg-fetch';
 import "./closest";
 
 window.javascriptLocales = {
-	copyMessage: "Just wanted to let you know that Satania is always with you! Even inside your clipboard! We are everywhere and you should really join us!\n" +
+	copyMessage: "Just wanted to let you know that 10032 is always with you! Even inside your clipboard! We are everywhere and you should really join us!\n" +
 		"Also yes, any website can access your clipboard however they want, isn't that creepy?\n" +
-		"Regardless, Satania is the BEST WAIFU, and you should agree! http://satania.moe/",
+		"Regardless, 10032 is the BEST WAIFU, and you should agree! https://misakanet.page/",
 	searchByVoice: "lmao, no one uses this button",
 	searchButton: "but the results are already there =]",
 	searchBar: "this isn't a real search bar",
 	snedHelp: "pls send helppp",
 	perfection: "perfection",
-	searchBarName: "satania",
+	searchBarName: "Misaka 10032",
 	newTab: "Link opens in a new tab."
 }
 
@@ -265,7 +265,7 @@ function updateCounts() {
 	}
 
 	document.getElementById('last-updated').innerText =
-		(new Date(1565782812058))
+		(new Date(1586663744000))
 			.toLocaleDateString(document.body.parentElement.lang, {
 				year: 'numeric',
 				month: 'long',

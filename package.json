@@ -1,11 +1,11 @@
 {
-	"name": "satania.moe",
+	"name": "misakanet.page",
 	"description": ">:3",
 	"private": true,
 	"author": "Pizzacus",
 	"version": "6.6.6",
-	"repository": "https://github.com/Pizzacus/satania.moe",
-	"homepage": "https://satania.moe",
+	"repository": "https://github.com/Sergster1/misakanet.page",
+	"homepage": "https://misakanet.page",
 	"scripts": {
 		"build": "gulp build",
 		"serve": "gulp serve"

@@ -1,4 +1,4 @@
-// MUSIC PLAYER -- People mo demons mo angels mo hikkurumete hai! (Happy!) Nandemo iinjanai? (Woohoo!)
+// MUSIC PLAYER -- Only my RAILGUN can shoot it IMASUGU, Karadajuu wo hikari no hayasa de kake megutta tashikana yokan
 .music-player-container {
 	display: none; // JS will override this
 	justify-content: center;
@@ -217,14 +217,14 @@
 		transition: 0.5s ease-out opacity;
 		width: 290px;
 		height: 362px;
-		background: url('img/satania_dance_spritesheet.png');
+		background: url('img/misaka10032_dance_spritesheet.png');
 		background-size: cover;
 		z-index: -1;
 		pointer-events: none;
 
 
 		.has-webp & {
-			background-image: url("./img/webp/satania_dance_spritesheet.webp");
+			background-image: url("./img/webp/misaka10032_dance_spritesheet.webp");
 		}
 
 		@media (max-width: 1024px) {
@@ -623,7 +623,7 @@ table {
 
 // EVEN POPE FRANCIS LOVES SATANIA -- I hear he's quite popular in the Bible fandom
 .pope-francis {
-	background-image: url('img/pope.jpg');
+	background-image: url('img/pope.png');
 	min-height: 50vw !important;
 
 	.has-webp & {

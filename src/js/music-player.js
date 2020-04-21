@@ -1,6 +1,6 @@
-const {Howl, Howler} = require('howler');
+const {Howl, Howler} = __webpack_require__(/*! howler */ "./node_modules/howler/dist/howler.js");
 
-const SATANIA_VOCALS_POS = 20;
+const MISAKA10032_VOCALS_POS = 21;
 
 const playState = {
 	wasPlaying: false,
@@ -32,7 +32,7 @@ const volumeController = musicPlayer.querySelector('.volume');
 const volumeSlider = musicPlayer.querySelector('.volume-bar');
 const volumeFill = musicPlayer.querySelector('.volume-fill');
 
-const dance = document.getElementById('satania-dance');
+const dance = document.getElementById('misaka10032-dance');
 
 musicPlayerContainer.style.display = 'block';
 
@@ -76,7 +76,7 @@ function setBarPos(pos) {
 	timeSliderElapsed.style.width = pos * 100 + '%';
 	timeProgression.innerText = `${formatTime(seek)} / ${formatTime(song.duration())}`;
 
-	const timeUntilSatania = SATANIA_VOCALS_POS - seek;
+	const timeUntilSatania = MISAKA10032_VOCALS_POS - seek;
 	document.getElementById('time-until-satania').innerText = Math.max(Math.ceil(timeUntilSatania), 0);
 
 	if (timeUntilSatania <= 0) {

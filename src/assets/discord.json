@@ -1,24 +1,23 @@
 {
 	"comment": "This is a dummy file used for local testing",
-	"code": "rC9ebp7",
+	"code": "xhxrb4A",
 	"guild": {
-		"splash": "297603ad517cc01f2399d4d52c36b72c",
+		"splash": "8396e72c46f603f8a766090e78c368ac",
 		"features": ["ANIMATED_ICON", "INVITE_SPLASH"],
-		"name": "Satania Dropout",
+		"name": "Kamachiland",
 		"verification_level": 2,
-		"icon": "a_763595e3ab04303e789e399f666b7988",
-		"banner": "b8b1838651acbdf12425c17f2e265aa8",
-		"id": "310180409541394432",
+		"icon": "16bdd0d55f107d317a9bc5467bb25461",
+		"id": "184115823055470592",
 		"vanity_url_code": null,
 		"description": null
 	},
-	"approximate_member_count": 9999,
+	"approximate_member_count": 1989,
 	"approximate_presence_count": 123,
 	"inviter": {
-		"username": "Pizzacus",
-		"discriminator": "2884",
-		"id": "216968594662227968",
-		"avatar": "4d26025d2d6fb8ba3edd325ee323ce5d"
+		"username": "Sergster1",
+		"discriminator": "1864",
+		"id": "140388390616039424",
+		"avatar": "53ac9b97efbe8e684f8e46f6dd107395"
 	},
-	"channel": {"type": 0, "id": "310183642444070913", "name": "rules"}
+	"channel": {"type": 0, "id": "184850293966635009", "name": "rules_and_faq"}
 }
