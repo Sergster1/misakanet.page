@@ -67,7 +67,7 @@ function formatTime(time) {
 const OFFSET = 0.35;
 const BPM = 135 / 2;
 const BEAT_DURATION = 60 / BPM;
-const NUMBER_OF_FRAMES = 22;
+const NUMBER_OF_FRAMES = 38;
 const ANIMATION_OFFSET = 18;
 
 function setBarPos(pos) {
